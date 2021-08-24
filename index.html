@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/df79e1d100.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Shrikhand&display=swap" rel="stylesheet">
     <title>Acceuil ohmyfood</title>
 </head>
 
@@ -15,29 +16,33 @@
     </header>
 
     <div class="geosearch">
+        <div class="searchbar">
         <i class="fas fa-map-marker-alt search_pointer"></i>
         <form method="POST" action="#" id="search">
             <input type="text" id="search_bar" placeholder="Paris, Belleville">
+        </div>
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button type="submit" class="search_button">Explorez nos restaurants</button>
+            <button type="submit" class="btn">Explorez nos restaurants</button>
         </form>
     </div>
 
     <nav>
         <h3>Fonctionnement</h3>
-        <ol>
-            <li><a href="#"><i class="fas fa-mobile-alt"></i></i>Choisissez un restaurant</a></li>
-            <li><a href="#"><i class="fas fa-list-ul"></i>Composez votre menu</a></li>
-            <li><a href="#"><i class="fas fa-store"></i>Dégustez au restaurant</a></li>
+        <ol class="nav_menu">
+            <a href="#"><li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li></a>
+            <a href="#"><li><i class="fas fa-list-ul"></i>Composez votre menu</li></a>
+            <a href="#"><li><i class="fas fa-store"></i>Dégustez au restaurant</li></a>
         </ol>
     </nav>
 
     <section class="restaurant">
         <h2>Restaurants</h2>
 
+<!--<i class="fas fa-heart"></i>-->
+
         <a href="menu_1.html">
-            <figure class="restaurant_link">
+            <figure class="restaurant__link">
                 <figcaption class="bottom_img">
                     <div>
                     <h3>La palette du goût</h3>
@@ -46,12 +51,12 @@
                     <i class="far fa-heart"></i>
                 </figcaption>
                 <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plate served">
-                <p>Nouveau</p>
+                <div class="new_sticker">Nouveau</div>
             </figure>
         </a>
 
         <a href="menu_2.html">
-            <figure class="restaurant_link">
+            <figure class="restaurant__link">
                 <figcaption class="bottom_img">
                     <div>
                     <h3>La note enchantée</h3>
@@ -60,12 +65,12 @@
                     <i class="far fa-heart"></i>
                 </figcaption>
                 <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plate served">
-                <p>Nouveau</p>
+                <div class="new_sticker">Nouveau</div>
             </figure>
         </a>
 
         <a href="menu_3.html">
-            <figure class="restaurant_link">
+            <figure class="restaurant__link">
                 <figcaption class="bottom_img">
                     <div>
                     <h3>À la française</h3>
@@ -78,7 +83,7 @@
         </a>
 
         <a href="menu_4.html">
-            <figure class="restaurant_link">
+            <figure class="restaurant__link">
                 <figcaption class="bottom_img">
                     <div>
                     <h3>Le délice des sens</h3>
@@ -95,13 +100,10 @@
         <h3>ohmyfood</h3>
 
         <ul>
-            <li>Proposer un restaurant</li>
-            <li>Devenir partenaire</li>
-        </ul>
-
-        <ul>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+            <a href="#"><li><i class="fas fa-utensils"></i>Proposer un restaurant</li></a>
+            <a href="#"><li><i class="fas fa-hands-helping"></i>Devenir partenaire</li></a>
+            <a href="#"><li>Mentions légales</li></a>
+            <a href="#"><li>Contact</li></a>
         </ul>
     </footer>
     

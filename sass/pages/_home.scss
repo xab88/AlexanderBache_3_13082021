@@ -1,0 +1,130 @@
+.geosearch{
+    width: 100%;
+    background-color: $bg_grey;
+    text-align: center;
+    height: 20.8rem;   
+    
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    font-size: large;
+    color: #2e2e2e;
+
+    i{
+        font-size: 16px;
+    }
+        #search_bar{
+        margin-left: 10px;
+        border: none;
+        background-color: #ebebeb;
+        height: 20px;
+
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                font-size: 16px;
+                font-weight: 600;
+                color: #373737;
+                opacity: 0.96;
+                padding-left: 11px;
+            }
+
+    }
+}
+
+.geosearch h2{
+    font-weight: 900;
+    font-size: 26px;
+    margin: 35px 35px 0px 35px;
+
+}
+
+.geosearch p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #575757;
+    
+}
+
+.restaurant{
+    background-color: #f6f6f6;
+    margin-bottom: 0;
+    padding-bottom: 2em;
+    h2{
+        padding-top: 2em;
+        padding-left: 1em;
+        font-size: 24px;
+    }
+
+    img{   
+    
+    object-fit: cover;
+    object-position: center;  
+    overflow: hidden;  
+    border-radius: 20px 20px 0 0;     
+    }
+
+    figure{
+    position: relative;
+    left: -27px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px #dfdfdf;
+    border: none;
+    background-color: #fff;    
+    display: flex;
+    flex-direction: column-reverse;
+    width: 350px;
+    height: 250px;
+    
+    }
+
+    figcaption{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    padding-left: 1em;
+    p{
+        margin-top: 0;
+    }
+    h3{
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+}
+
+    a{
+        text-decoration: none;
+        color: black;
+        &:visited{
+            color:black
+        }
+    }
+
+    i{
+        font-size: 25px;
+        margin-right: 25px;
+        margin-top: 25px;
+    }
+
+    .new_sticker{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: #99E2D0;
+        font-size: 15px;
+        font-weight: 600;
+        color: #0f9071;
+        padding: 5px 12px;
+        border-radius: 2px;
+
+
+    }
+}

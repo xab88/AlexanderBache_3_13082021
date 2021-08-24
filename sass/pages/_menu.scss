@@ -1,0 +1,63 @@
+.secondary_header a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    &:visited{
+        color: black;
+    }
+
+    i{        
+        color: black;
+        font-size: 22px;
+        opacity: .8;
+    }
+    h1{
+        margin-left: 60px;
+        padding: 20px;
+
+    }
+}
+
+.menu {
+    background-color: #f6f6f6;
+    img{
+    width: 375px;
+    padding-bottom: 20px;
+    }
+    .menu_title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: shrikhand;
+        i{
+            font-size: 25px;
+        }
+        
+    }
+
+    a{
+        text-decoration: none;
+        
+
+    }
+
+    figure{
+        background-color: #fff;
+        border-radius: 15px;
+        width: 350px;
+        height: 75px;
+        color: black;
+        position: relative;
+        left: -1.8em;
+        
+        &:visited{
+            color: black;
+        }
+    }
+    .price{
+        display: flex;
+        justify-content: space-between;
+    }
+}
