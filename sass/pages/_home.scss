@@ -55,7 +55,7 @@
 }
 
 .restaurant{
-    background-color: #f6f6f6;
+    background-color: $bg_grey;
     margin-bottom: 0;
     padding-bottom: 2em;
     h2{
@@ -82,8 +82,7 @@
     display: flex;
     flex-direction: column-reverse;
     width: 350px;
-    height: 250px;
-    
+    height: 250px;    
     }
 
     figcaption{
@@ -112,19 +111,19 @@
         font-size: 25px;
         margin-right: 25px;
         margin-top: 25px;
+        
     }
 
     .new_sticker{
         position: absolute;
         top: 15px;
         right: 15px;
-        background-color: #99E2D0;
+        background-color: $tertiary_green;
         font-size: 15px;
         font-weight: 600;
         color: #0f9071;
         padding: 5px 12px;
         border-radius: 2px;
-
 
     }
 }

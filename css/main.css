@@ -16,6 +16,10 @@ h1 {
   margin: 0;
 }
 
+h4 {
+  font-size: 18px;
+}
+
 footer {
   background-color: #353535;
   color: #fff;
@@ -51,14 +55,40 @@ header {
   border-right: none;
 }
 
+.secondary_header {
+  border: none;
+}
+.secondary_header a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.secondary_header a:visited {
+  color: black;
+}
+.secondary_header a i {
+  color: black;
+  font-size: 22px;
+  opacity: 0.8;
+  margin-left: 0.8em;
+}
+.secondary_header a h1 {
+  margin-left: 50px;
+  padding: 20px;
+}
+
 nav {
   width: 350px;
+  counter-reset: li;
 }
 nav h3 {
   font-size: 22px;
   margin-left: 1em;
 }
 nav li {
+  display: flex;
+  align-items: center;
   margin-top: 2em;
   background-color: #f6f6f6;
   padding: 20px;
@@ -67,11 +97,29 @@ nav li {
   font-size: 14px;
   font-weight: 600;
   list-style-type: none;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+nav li:hover {
+  transform: scale(1.15);
+  background-color: #9356DC;
+}
+nav li:active {
+  background-color: #9356DC;
 }
 nav li::before {
+  counter-increment: li;
   content: counter(li);
-  color: #9356DC;
-  margin-left: -1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6f6;
+  font-size: 11px;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #9356DC;
+  margin-left: -2em;
 }
 nav a {
   color: black;
@@ -82,6 +130,9 @@ nav i {
   margin-left: 1em;
   color: #7d7d7d;
 }
+nav i:hover {
+  color: #9356DC;
+}
 
 .btn {
   margin-top: 0.5em;
@@ -91,8 +142,21 @@ nav i {
   box-shadow: 5px 2px 5px #c4c4c4;
   font-size: 15px;
   background-color: #9356DC;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.btn_menu {
+  margin-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-left: 6em;
 }
 
 .geosearch {
@@ -210,41 +274,40 @@ nav i {
   border-radius: 2px;
 }
 
-.secondary_header a {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  border: none;
-}
-.secondary_header a:visited {
-  color: black;
-}
-.secondary_header a i {
-  color: black;
-  font-size: 22px;
-  opacity: 0.8;
-}
-.secondary_header a h1 {
-  margin-left: 60px;
-  padding: 20px;
-}
-
 .menu {
   background-color: #f6f6f6;
 }
 .menu img {
   width: 375px;
   padding-bottom: 20px;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
 }
 .menu .menu_title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: shrikhand;
+  margin-left: 0.8em;
+  margin-right: 2em;
+}
+.menu .menu_title h2 {
+  font-size: 28px;
 }
 .menu .menu_title i {
   font-size: 25px;
+  opacity: 0.7;
+}
+.menu h3 {
+  margin-top: 0;
+  margin-left: 0.8em;
+  opacity: 0.9;
+  font-weight: 400;
+  border-bottom: 3px solid #99E2D0;
+  font-size: 16px;
+  padding-bottom: 5px;
+  width: 11%;
 }
 .menu a {
   text-decoration: none;
@@ -253,17 +316,25 @@ nav i {
   background-color: #fff;
   border-radius: 15px;
   width: 350px;
-  height: 75px;
+  height: 60px;
   color: black;
-  position: relative;
-  left: -1.8em;
+  margin-left: 0.8em;
+  box-shadow: 2px 2px 7px #dfdfdf;
+  padding-top: 0.5em;
+}
+.menu figure h4 {
+  margin: 0 0 0 0.8em;
+}
+.menu figure p {
+  margin: 5px 13px 0 13px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  font-weight: 400;
+  opacity: 0.8;
 }
 .menu figure:visited {
   color: black;
-}
-.menu .price {
-  display: flex;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

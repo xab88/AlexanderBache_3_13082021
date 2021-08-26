@@ -8,3 +8,30 @@ header{
     border-image: linear-gradient(0deg, rgba(205,205,205), rgba(234,234,234)) 0.5; border-left:none; border-top:none; border-right:none;
 }
 
+.secondary_header {
+    border: none;
+
+    a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+    
+    &:visited{
+        color: black;
+    }
+
+    i{        
+        color: black;
+        font-size: 22px;
+        opacity: .8;
+        margin-left: 0.8em;
+    }
+    h1{
+        margin-left: 50px;
+        padding: 20px;
+
+    }
+  }
+}
