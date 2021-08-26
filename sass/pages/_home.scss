@@ -13,20 +13,25 @@
     background-color: #eaeaea;
     padding-top: 10px;
     padding-bottom: 10px;    
-    font-size: large;
-    color: #2e2e2e;
+    
+    
 
-    i{
-        font-size: 16px;
-    }
+        i{
+            font-size: 16px;
+        }
         #search_bar{
         margin-left: 10px;
         border: none;
         background-color: #ebebeb;
         height: 20px;
 
+//focused placeholder to the right!!!!!
             &:focus{
                 outline: none;
+                font-weight: bold;
+                font-size: large;
+                color: #2e2e2e;
+                
             }
             &::placeholder{
                 font-size: 16px;
@@ -107,12 +112,8 @@
         }
     }
 
-    i{
-        font-size: 25px;
-        margin-right: 25px;
-        margin-top: 25px;
-        
-    }
+       
+
 
     .new_sticker{
         position: absolute;

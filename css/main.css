@@ -98,14 +98,15 @@ nav li {
   font-weight: 600;
   list-style-type: none;
   transform: scale(1);
-  transition: transform 0.2s;
+  transition: transform 0.25s ease-in-out;
 }
 nav li:hover {
-  transform: scale(1.15);
-  background-color: #9356DC;
+  transform: scale(1.05);
+  background-color: #f2eafb;
 }
-nav li:active {
-  background-color: #9356DC;
+nav li:focus {
+  transform: scale(1);
+  background-color: lighten #9356DC, 35;
 }
 nav li::before {
   counter-increment: li;
@@ -129,9 +130,6 @@ nav i {
   margin-right: 1.5em;
   margin-left: 1em;
   color: #7d7d7d;
-}
-nav i:hover {
-  color: #9356DC;
 }
 
 .btn {
@@ -159,6 +157,42 @@ nav i:hover {
   margin-left: 6em;
 }
 
+i {
+  opacity: 0.5;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-right: 25px;
+  margin-top: 25px;
+  transition-timing-function: ease-out;
+}
+i:hover {
+  opacity: 1;
+  font-weight: bold;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+}
+
+.menu i {
+  font-size: 25px;
+  opacity: 0.7;
+}
+.menu i:hover {
+  font-weight: bold;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+}
+.menu i:focus {
+  font-weight: bold;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+}
+
 .geosearch {
   width: 100%;
   background-color: #f6f6f6;
@@ -173,8 +207,6 @@ nav i:hover {
   background-color: #eaeaea;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: large;
-  color: #2e2e2e;
 }
 .searchbar i {
   font-size: 16px;
@@ -187,6 +219,9 @@ nav i:hover {
 }
 .searchbar #search_bar:focus {
   outline: none;
+  font-weight: bold;
+  font-size: large;
+  color: #2e2e2e;
 }
 .searchbar #search_bar::placeholder {
   font-size: 16px;
@@ -257,11 +292,6 @@ nav i:hover {
 .restaurant a:visited {
   color: black;
 }
-.restaurant i {
-  font-size: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
-}
 .restaurant .new_sticker {
   position: absolute;
   top: 15px;
@@ -294,10 +324,6 @@ nav i:hover {
 }
 .menu .menu_title h2 {
   font-size: 28px;
-}
-.menu .menu_title i {
-  font-size: 25px;
-  opacity: 0.7;
 }
 .menu h3 {
   margin-top: 0;

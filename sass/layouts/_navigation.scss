@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 nav{
     width: 350px;
     counter-reset: li;
@@ -19,19 +21,19 @@ nav{
        font-weight: 600;
        list-style-type: none;  
        transform: scale(1);
-       transition: transform 0.2s;
+       transition: transform 0.25s ease-in-out;
        
        &:hover{
-           transform: scale(1.15);
-           background-color: #9356DC;
+           transform: scale(1.05);
+           background-color: lighten($primary_purple, 35);
        } 
-       &:active{
-           background-color: #9356DC;
-       } 
-         
+
+       &:focus{
+           transform: scale(1);
+           background-color: lighten ($primary_purple, 35);
+           
+       }    
     }
-    
-    //list discs to be reviewed!!!!
 
     li::before {
         counter-increment: li;
@@ -44,8 +46,9 @@ nav{
         width: 2em;
         height: 2em;
         border-radius: 50%;
-        background-color: #9356DC;
+        background-color: $primary_purple;
         margin-left: -2em;
+        
     }
 
     a{        
@@ -57,9 +60,8 @@ nav{
         margin-right: 1.5em;
         margin-left: 01em;
         color:#7d7d7d;
-        &:hover{
-            color: #9356DC;
-        }
-    }       
+          
+    }    
+  
 }
 
