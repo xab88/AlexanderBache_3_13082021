@@ -24,7 +24,7 @@ footer {
   background-color: #353535;
   color: #fff;
   margin-top: 0;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 footer h3 {
   font-family: shrikhand;
@@ -35,7 +35,7 @@ footer h3 {
   padding-top: 1em;
 }
 footer li {
-  padding-top: 0.3em;
+  margin-top: 0.5em;
   list-style-type: none;
 }
 footer i {
@@ -78,6 +78,14 @@ header {
   padding: 20px;
 }
 
+@keyframes translate-Y-heart {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 nav {
   width: 350px;
   counter-reset: li;
@@ -103,6 +111,9 @@ nav li {
 nav li:hover {
   transform: scale(1.05);
   background-color: #f2eafb;
+}
+nav li:hover i {
+  color: #9356DC;
 }
 nav li:focus {
   transform: scale(1);
@@ -132,6 +143,14 @@ nav i {
   color: #7d7d7d;
 }
 
+@keyframes translate-Y-heart {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 .btn {
   margin-top: 0.5em;
   padding: 15px 30px;
@@ -157,26 +176,34 @@ nav i {
   margin-left: 6em;
 }
 
-i {
+.restaurant i {
   opacity: 0.5;
   font-size: 25px;
   font-weight: lighter;
   margin-right: 25px;
-  margin-top: 25px;
   transition-timing-function: ease-out;
 }
-i:hover {
-  opacity: 1;
+.restaurant i:hover {
+  opacity: 0.7;
   font-weight: bold;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
 }
+.restaurant i:hover::after {
+  content: "";
+  position: absolute;
+  height: 10%;
+  width: 7%;
+  right: 7.2%;
+  animation: translate-Y-heart 1000ms ease-out forwards;
+  background: #fff;
+}
 
 .menu i {
   font-size: 25px;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .menu i:hover {
   font-weight: bold;
@@ -184,6 +211,15 @@ i:hover {
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
+}
+.menu i:hover::after {
+  content: "";
+  position: absolute;
+  height: 3%;
+  width: 2%;
+  right: 39%;
+  animation: translate-Y-heart 1000ms ease-out forwards;
+  background: #f6f6f6;
 }
 .menu i:focus {
   font-weight: bold;
@@ -291,6 +327,9 @@ i:hover {
 }
 .restaurant a:visited {
   color: black;
+}
+.restaurant i {
+  margin-top: 25px;
 }
 .restaurant .new_sticker {
   position: absolute;

@@ -21,18 +21,19 @@ nav{
        font-weight: 600;
        list-style-type: none;  
        transform: scale(1);
-       transition: transform 0.25s ease-in-out;
-       
+       transition: transform 0.25s ease-in-out;       
        &:hover{
            transform: scale(1.05);
            background-color: lighten($primary_purple, 35);
+           i{
+            color: $primary_purple;
+           }           
        } 
 
        &:focus{
            transform: scale(1);
-           background-color: lighten ($primary_purple, 35);
-           
-       }    
+           background-color: lighten ($primary_purple, 35);           
+       }      
     }
 
     li::before {
@@ -47,8 +48,7 @@ nav{
         height: 2em;
         border-radius: 50%;
         background-color: $primary_purple;
-        margin-left: -2em;
-        
+        margin-left: -2em;        
     }
 
     a{        
@@ -60,6 +60,7 @@ nav{
         margin-right: 1.5em;
         margin-left: 01em;
         color:#7d7d7d;
+        
           
     }    
   

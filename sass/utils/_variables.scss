@@ -5,3 +5,13 @@ $primary_purple: #9356DC;
 $secondary_pink: #FF79DA;
 $tertiary_green: #99E2D0;
 
+//keyframes
+
+@keyframes translate-Y-heart{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
