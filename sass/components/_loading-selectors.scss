@@ -1,44 +1,41 @@
 
 .restaurant{
-i{         
-    opacity: .5;   
-    font-size: 25px;
-    font-weight: lighter;
-    margin-right: 25px;
-   
-    
-    transition-timing-function: ease-out;
-    
-    &:hover{
-        opacity: .7;
-        font-weight: bold;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
-         &::after{
-             content: "";
-             position: absolute;
-             height: 10%;
-             width: 7%;
-             right: 7.2%;
-             
-             animation: translate-Y-heart 1000ms ease-out forwards;
-             
-             background: #fff;
-         }
-
-
-        
-    }   
-} 
+    i{         
+        opacity: .5;   
+        font-size: 25px;
+        margin-right: 25px;   
+        &:hover{
+            opacity: .7;
+            font-weight: bold;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
+             &::after{
+                 content: "";
+                 position: absolute;
+                 height: 10%;
+                 width: 7%;
+                 right: 7.2%;             
+                 animation: translate-Y-heart 1000ms ease-out forwards;             
+                 background:#fff;
+                }        
+            }
+            &:focus{
+                font-weight: bold;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
+            
+            }   
+        } 
 }
 
+// figure out why menu heart icon animation moves with screen change!!!!
 
 
-
-
-.menu{
+.menu_title{
     i{
         font-size: 25px;
         opacity: 0.5;
@@ -53,7 +50,7 @@ i{
                 position: absolute;
                 height: 3%;
                 width: 2%;
-                right:39%;           
+                right: 40%;                           
                 animation: translate-Y-heart 1000ms ease-out forwards;            
                 background: $bg_grey;
             }

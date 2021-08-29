@@ -179,9 +179,7 @@ nav i {
 .restaurant i {
   opacity: 0.5;
   font-size: 25px;
-  font-weight: lighter;
   margin-right: 25px;
-  transition-timing-function: ease-out;
 }
 .restaurant i:hover {
   opacity: 0.7;
@@ -200,28 +198,35 @@ nav i {
   animation: translate-Y-heart 1000ms ease-out forwards;
   background: #fff;
 }
-
-.menu i {
-  font-size: 25px;
-  opacity: 0.5;
-}
-.menu i:hover {
+.restaurant i:focus {
   font-weight: bold;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
 }
-.menu i:hover::after {
+
+.menu_title i {
+  font-size: 25px;
+  opacity: 0.5;
+}
+.menu_title i:hover {
+  font-weight: bold;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+}
+.menu_title i:hover::after {
   content: "";
   position: absolute;
   height: 3%;
   width: 2%;
-  right: 39%;
+  right: 40%;
   animation: translate-Y-heart 1000ms ease-out forwards;
   background: #f6f6f6;
 }
-.menu i:focus {
+.menu_title i:focus {
   font-weight: bold;
   color: transparent;
   background-clip: text;
