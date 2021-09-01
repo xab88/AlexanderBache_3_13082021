@@ -42,6 +42,14 @@
         padding-bottom: 5px;
         width: 11%;       
     }
+    /*.dish2{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
+        .dish3{animation: fadeInAnimation 1000ms ease-in 3100ms 1 forwards;}
+        .dish4{animation: fadeInAnimation 1000ms ease-in 4100ms 1 forwards;}
+        .dish5{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
+        .dish6{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
+        .dish7{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
+        .dish8{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
+        .dish9{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}*/
     
     .dish{
         cursor: pointer;
@@ -58,18 +66,36 @@
         box-shadow: 2px 2px 7px #dfdfdf;
         padding-top: 0.5em;        
         overflow: hidden;
-
-        animation: fadeInAnimation ease 2000ms;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
+        animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;
+    //animation: name duration timing-function delay iteration-count direction fill-mode;
+       
         
-        .dish__name{
-            
-            overflow: hidden;
-            
-            text-overflow: ellipsis;
-            
-            
+        
+
+        &:hover{
+            .dish__selected{
+                color: #fff;
+                background-color: $tertiary_green;
+                font-weight: bold;
+                font-size: 25px;
+                width: 70px;
+                height: 68px;
+                border-radius: 0 15px 15px 0;
+                position: relative;
+                top: -4px;
+                animation: translate-selection 500ms ease-in-out forwards;
+                    i{               
+                    animation: check-rotate 500ms ease-in-out 200ms forwards;            
+                    }
+
+                }
+            .dish__price{
+                animation: translate-selection 500ms ease-in-out forwards;
+                } 
+            }
+                   
+        
+        .dish__name{           
             
             .dish__name--title{
                 margin: 0 0 0 0.8em; }
@@ -80,9 +106,7 @@
                 justify-content: space-between;
                 font-size: 14.5px;
                 font-weight: 400;
-                opacity: 0.8;
-                
-                
+                opacity: 0.8;               
                 
             } 
         }
@@ -100,39 +124,13 @@
             
         }
 
-        .dish__selected--icon{
-            opacity: 0;
-            width: 0;
+        .dish__selected{ 
+            width: 0;           
             font-size: 25px;
             color: #fff;
-                      
-
-            &:hover{
-            opacity: 1;
             display:flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            background-color: $tertiary_green;
-            font-weight: bold;
-            font-size: 25px;
-            width: 70px;
-            height: 68px;
-            border-radius: 0 15px 15px 0;
-            position: relative;
-            top: -4px;
-            animation: translate-selection 500ms ease-in-out forwards;
-            i{
-            
-            animation: check-rotate 500ms ease-in-out 200ms forwards;
-            
-            
-            
-            }
-
-            }
-
-
-        }
+            justify-content: center;  
+            align-items: center;          
+       }   
     }
 }

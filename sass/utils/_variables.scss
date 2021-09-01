@@ -16,13 +16,26 @@ $tertiary_green: #99E2D0;
     }
 }
 
-@keyframes spinner{
+@keyframes loader-scale{
     0%{
-        transform: rotate(0deg);
+        transform: scale(.5);
     }
     100%{
-        transform: rotate(360deg);
+        transform: rotate(1);
     }
+}
+
+@keyframes loading-transition{
+   0%{opacity: 1;
+    z-index: 1000;
+}
+   70%{opacity:1;
+    z-index: 1000;
+}
+    100%{opacity: 0;
+    z-index: 0;
+}
+
 }
 
 @keyframes translate-selection{
@@ -36,6 +49,12 @@ $tertiary_green: #99E2D0;
 }
 
 @keyframes fadeInAnimation{
-    0%{opacity:0;}
-    100%{opacity:1;}
+    0%{
+        opacity:0;
+        transform: translate3d(0, -50%, 0);
+    }
+    100%{
+        opacity:1;
+        transform: none;
+    }
 }

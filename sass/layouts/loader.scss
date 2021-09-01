@@ -1,19 +1,35 @@
-@import "../utils/variables";
-
-.loader{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    background-color: $bg_grey;
-    display: flex;
+@import "../utils/variables";    
+    
+.loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background:linear-gradient(to bottom right, $secondary_pink, $primary_purple);
+    display: flex;            
     align-items: center;
-    justify-content: center;
-    border: 5px solid $bg_grey;
-    border-radius: 50%;
-    border-top: 5px solid $primary_purple;
-    animation: spinner 1500ms ease-in-out infinite; 
+    justify-content: center;                       
+    animation: loading-transition 3000ms forwards; 
     font-family: $shrikhand;
-    color: $primary_purple;
-    opacity: .7;
+    color: $tertiary_green;
+    font-size: 50px;
+    opacity: .5;
+    overflow: hidden;            
+  }
+  
+  .loader__frame {            
+    animation: loader-scale 1500ms ease-in-out infinite;
+    z-index: 100;
+    
+    
+  }
+          
+        
+    
+    
 
-}
+    
+
+
