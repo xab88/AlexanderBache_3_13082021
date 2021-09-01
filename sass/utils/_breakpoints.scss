@@ -1,5 +1,5 @@
-$mobile: new-breakpoint(min-width 375px);
-$tablet: new-breakpoint(min-width 768px);
-$desktop: new-breakpoint(min-width 1260px)
+$mobile: min-width 375px;
+$tablet: min-width 768px;
+$desktop: min-width 1260px;
 
 
