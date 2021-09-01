@@ -1,0 +1,19 @@
+@import "../utils/variables";
+
+.loader{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: $bg_grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid $bg_grey;
+    border-radius: 50%;
+    border-top: 5px solid $primary_purple;
+    animation: spinner 1500ms ease-in-out infinite; 
+    font-family: $shrikhand;
+    color: $primary_purple;
+    opacity: .7;
+
+}

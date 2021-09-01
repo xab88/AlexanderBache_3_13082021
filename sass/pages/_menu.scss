@@ -1,20 +1,6 @@
 
 
-.loader{
-    width: 50px;
-    height:50px;
-    margin: auto;
-    background-color: $bg_grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid $bg_grey;
-    border-radius: 50%;
-    border-top: 5px solid $primary_purple;
-    animation: spinner 1500ms ease-in-out infinite; 
-    font-family: $shrikhand;
 
-}
 
 #menu__img{
         width: 375px;       
@@ -43,6 +29,7 @@
     
     .menu__options{
         margin-top: 1em;
+        
     } 
     
     h3{
@@ -69,8 +56,21 @@
         margin-top: .8em;
         margin-left: 0.8em;
         box-shadow: 2px 2px 7px #dfdfdf;
-        padding-top: 0.5em;
+        padding-top: 0.5em;        
+        overflow: hidden;
+
+        animation: fadeInAnimation ease 2000ms;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        
         .dish__name{
+            
+            overflow: hidden;
+            
+            text-overflow: ellipsis;
+            
+            
+            
             .dish__name--title{
                 margin: 0 0 0 0.8em; }
 
@@ -81,15 +81,32 @@
                 font-size: 14.5px;
                 font-weight: 400;
                 opacity: 0.8;
+                
+                
+                
             } 
         }
         .dish__price{
             font-weight: bold;
             opacity: .8;
+            margin-right: .5em;
+            
+        }
+        .dish__visible{
+            width: 340px;
+            display: flex;
+            justify-content: space-between;
+           
+            
         }
 
         .dish__selected--icon{
             opacity: 0;
+            width: 0;
+            font-size: 25px;
+            color: #fff;
+                      
+
             &:hover{
             opacity: 1;
             display:flex;
@@ -104,9 +121,20 @@
             border-radius: 0 15px 15px 0;
             position: relative;
             top: -4px;
+            animation: translate-selection 500ms ease-in-out forwards;
+            i{
+            
+            animation: check-rotate 500ms ease-in-out 200ms forwards;
+            
+            
+            
+            }
+
             }
 
 
         }
     }
 }
+
+
