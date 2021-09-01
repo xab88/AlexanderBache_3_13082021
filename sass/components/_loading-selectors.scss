@@ -3,7 +3,9 @@
     i{         
         opacity: .5;   
         font-size: 25px;
-        margin-right: 25px;   
+        margin-right: 25px; 
+//use pointer-events to make it fill but no clic!!!!
+
         &:hover{
             opacity: .7;
             font-weight: bold;
@@ -11,58 +13,59 @@
             background-clip: text;
             -webkit-background-clip: text;
             background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
-             &::after{
-                 content: "";
-                 position: absolute;
-                 height: 10%;
-                 width: 7%;
-                 right: 7.2%;             
-                 animation: translate-Y-heart 1000ms ease-out forwards;             
-                 background:#fff;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                right: 25px;             
+                animation: translate-Y-heart 1000ms ease-out forwards;             
+                background:#fff;
                 }        
             }
             &:focus{
                 font-weight: bold;
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, $secondary_pink, $primary_purple);         
             
             }   
-        } 
+    } 
 }
 
 // figure out why menu heart icon animation moves with screen change!!!!
 
 
-.menu_title{
+.menu__title{
     i{
         font-size: 25px;
         opacity: 0.5;
-        &:hover{
-        font-weight: bold;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to top, $secondary_pink, $primary_purple);  
-            &::after{
-                content: "";
-                position: absolute;
-                height: 3%;
-                width: 2%;
-                right: 40%;                           
-                animation: translate-Y-heart 1000ms ease-out forwards;            
-                background: $bg_grey;
+            &:hover{
+                opacity: 0.7;
+                font-weight: bold;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, $secondary_pink, $primary_purple);  
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height:25px;
+                    width: 25px;
+                    left: 87.4%;                           
+                    animation: translate-Y-heart 1000ms ease-out forwards;            
+                    background: $bg_grey;
+                }
             }
-        }
 
-        &:focus{
-            font-weight: bold;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
-        
-        }
+            &:focus{
+                font-weight: bold;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
+                
+            }
     }
 }
