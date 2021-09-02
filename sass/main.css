@@ -779,6 +779,9 @@ nav i {
 
 #menu__img {
   width: 375px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {

@@ -3,8 +3,14 @@
 
 
 #menu__img{
-        width: 375px;       
+        width: 375px; 
+        height: 250px;
+        object-fit: cover;
+        
+
     }
+
+
 
 .menu {
     background-color: $bg_grey;
