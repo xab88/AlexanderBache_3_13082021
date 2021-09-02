@@ -56,8 +56,11 @@
                     left: 87.4%;                           
                     animation: translate-Y-heart 1000ms ease-out forwards;            
                     background: $bg_grey;
+                    
+                    
                 }
             }
+            
 
             &:focus{
                 font-weight: bold;

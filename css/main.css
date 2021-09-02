@@ -4,6 +4,35 @@ body {
   margin: auto;
   color: black;
 }
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body nav {
+    width: 100%;
+  }
+  body nav li {
+    margin-right: 2em;
+  }
+  body .restaurant_list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body .restaurant_list figure {
+    margin-right: 0;
+    width: 320px;
+  }
+  body footer h3 {
+    text-align: center;
+  }
+  body footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 
 h1 {
   font-family: shrikhand;
@@ -528,14 +557,6 @@ nav i {
   width: 375px;
   border-radius: 25px 25px 0 0;
   position: relative;
-  /*.dish2{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
-      .dish3{animation: fadeInAnimation 1000ms ease-in 3100ms 1 forwards;}
-      .dish4{animation: fadeInAnimation 1000ms ease-in 4100ms 1 forwards;}
-      .dish5{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
-      .dish6{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
-      .dish7{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
-      .dish8{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
-      .dish9{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}*/
 }
 .menu .menu__title {
   display: flex;
@@ -559,6 +580,36 @@ nav i {
   padding-bottom: 5px;
   width: 11%;
 }
+.menu .dish1 {
+  animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;
+}
+.menu .dish2 {
+  animation: fadeInAnimation 1000ms ease-in 2500ms 1 forwards;
+}
+.menu .dish3 {
+  animation: fadeInAnimation 1000ms ease-in 2900ms 1 forwards;
+}
+.menu .dish4 {
+  animation: fadeInAnimation 1000ms ease-in 3300ms 1 forwards;
+}
+.menu .dish5 {
+  animation: fadeInAnimation 1000ms ease-in 3700ms 1 forwards;
+}
+.menu .dish6 {
+  animation: fadeInAnimation 1000ms ease-in 4100ms 1 forwards;
+}
+.menu .dish7 {
+  animation: fadeInAnimation 1000ms ease-in 4500ms 1 forwards;
+}
+.menu .dish8 {
+  animation: fadeInAnimation 1000ms ease-in 4900ms 1 forwards;
+}
+.menu .dish9 {
+  animation: fadeInAnimation 1000ms ease-in 5300ms 1 forwards;
+}
+.menu .dish10 {
+  animation: fadeInAnimation 1000ms ease-in 5700ms 1 forwards;
+}
 .menu .dish {
   cursor: pointer;
   display: flex;
@@ -574,7 +625,6 @@ nav i {
   box-shadow: 2px 2px 7px #dfdfdf;
   padding-top: 0.5em;
   overflow: hidden;
-  animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;
 }
 .menu .dish:hover .dish__selected {
   color: #fff;

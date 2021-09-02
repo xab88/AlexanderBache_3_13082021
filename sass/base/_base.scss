@@ -1,4 +1,5 @@
-
+@import "../utils/breakpoints",
+        "../utils/mixins";
 
 
 
@@ -8,8 +9,10 @@ body{
     width: 375px;
     margin: auto;
     color: black;
+    @include tablet-only;
    
 }
+
 
 h1{
     font-family: shrikhand;
