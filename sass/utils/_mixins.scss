@@ -1,31 +1,22 @@
-@mixin mobile-only {
-    @media screen and (max-width:map-get($breakpoints, mobile)){
-        width: 100%;
-    }
-    
-}
+
 
 @mixin tablet-only {
-    @media screen and (max-width:map-get($breakpoints, tablet)){
+    @media screen and (min-width:map-get($breakpoints, tablet)){
+    
         width:100%;
         nav{
-            width: 100%;
+            width:auto;
+            ol{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
             li{
                 margin-right: 2em;
+                display: flex;
             }
-        }
-        .restaurant_list {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            figure{
-                margin-right: 0;
-                width: 320px;
-            }
-        }
+        }     
+        
         footer{
             h3{
                 text-align: center;
@@ -35,12 +26,18 @@
                 justify-content: space-around;
             }
         }
+
         
-    }
+    }      
 }
 
 @mixin desktop-only {
     @media screen and (max-width:map-get($breakpoints, desktop)) {
+        .restaurant_list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
         
     }
     

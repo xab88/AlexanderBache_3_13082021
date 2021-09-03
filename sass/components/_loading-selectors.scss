@@ -4,6 +4,7 @@
         opacity: .5;   
         font-size: 25px;
         margin-right: 25px; 
+        
 //use pointer-events to make it fill but no clic!!!!
 
         &:hover{
@@ -23,7 +24,8 @@
                 background:#fff;
                 }        
             }
-            &:focus{
+            &:active{
+                pointer-events:none;
                 font-weight: bold;
                 color: transparent;
                 background-clip: text;

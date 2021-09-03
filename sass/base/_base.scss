@@ -6,10 +6,12 @@
 
 body{
     font-family: roboto, sans-serif;
-    width: 375px;
+    min-width: 375px;
+    
     margin: auto;
     color: black;
     @include tablet-only;
+    @include desktop-only;
    
 }
 

@@ -1,22 +1,18 @@
 body {
   font-family: roboto, sans-serif;
-  width: 375px;
+  min-width: 375px;
   margin: auto;
   color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
     width: 100%;
   }
   body nav {
-    width: 100%;
+    width: auto;
   }
-  body nav li {
-    margin-right: 2em;
-  }
-  body .restaurant_list {
-    width: 100%;
+  body nav ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -27,12 +23,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
-  body .restaurant_list figure {
-    margin-right: 0;
-    width: 320px;
+  body nav li {
+    margin-right: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   body footer h3 {
     text-align: center;
@@ -43,6 +39,20 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1146px) {
+  body .restaurant_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -365,8 +375,21 @@ footer a {
 }
 
 nav {
-  width: 350px;
+  width: 100%;
   counter-reset: li;
+}
+
+nav ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav h3 {
@@ -375,6 +398,7 @@ nav h3 {
 }
 
 nav li {
+  width: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,6 +423,7 @@ nav li {
 }
 
 nav li:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   background-color: #f2eafb;
@@ -435,14 +460,9 @@ nav li::before {
   margin-left: -2em;
 }
 
-nav a {
-  color: black;
-  text-decoration: none;
-}
-
 nav i {
   margin-right: 1.5em;
-  margin-left: 01em;
+  margin-left: 1em;
   color: #7d7d7d;
 }
 
@@ -579,7 +599,8 @@ nav i {
   background: #fff;
 }
 
-.restaurant i:focus {
+.restaurant i:active {
+  pointer-events: none;
   font-weight: bold;
   color: transparent;
   background-clip: text;
@@ -745,7 +766,17 @@ nav i {
   font-size: 24px;
 }
 
-.restaurant img {
+.restaurant .restaurant_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.restaurant .restaurant_list img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -754,9 +785,9 @@ nav i {
   border-radius: 20px 20px 0 0;
 }
 
-.restaurant figure {
+.restaurant .restaurant_list figure {
   position: relative;
-  left: -27px;
+  margin: 0 0 0;
   border-radius: 20px;
   -webkit-box-shadow: 2px 2px 7px #dfdfdf;
           box-shadow: 2px 2px 7px #dfdfdf;
@@ -773,7 +804,7 @@ nav i {
   height: 250px;
 }
 
-.restaurant figcaption {
+.restaurant .restaurant_list figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,29 +815,34 @@ nav i {
   padding-left: 1em;
 }
 
-.restaurant figcaption p {
+.restaurant .restaurant_list figcaption p {
   margin-top: 0;
 }
 
-.restaurant figcaption h3 {
+.restaurant .restaurant_list figcaption h3 {
   margin-bottom: 5px;
   margin-top: 10px;
 }
 
-.restaurant a {
+.restaurant .restaurant_list a {
   text-decoration: none;
   color: black;
+  height: 250px;
+  width: 350px;
+  margin-bottom: 2.5em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
-.restaurant a:visited {
+.restaurant .restaurant_list a:visited {
   color: black;
 }
 
-.restaurant i {
+.restaurant .restaurant_list i {
   margin-top: 25px;
 }
 
-.restaurant .new_sticker {
+.restaurant .restaurant_list .new_sticker {
   position: absolute;
   top: 15px;
   right: 15px;

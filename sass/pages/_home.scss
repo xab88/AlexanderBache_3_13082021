@@ -68,24 +68,31 @@
         padding-left: 1em;
         font-size: 24px;
     }
-
-    img{   
+    .restaurant_list{
+        display: flex;
+        justify-content: space-around;
+        
+        flex-wrap: wrap;
+        
     
+    img{   
     object-fit: cover;
     object-position: center;  
     overflow: hidden;  
-    border-radius: 20px 20px 0 0;     
+    border-radius: 20px 20px 0 0;
+        
     }
 
     figure{
     position: relative;
-    left: -27px;
+    margin: 0 0 0;
     border-radius: 20px;
     box-shadow: 2px 2px 7px #dfdfdf;
     border: none;
     background-color: #fff;    
     display: flex;
     flex-direction: column-reverse;
+    
     width: 350px;
     height: 250px;    
     }
@@ -107,6 +114,12 @@
     a{
         text-decoration: none;
         color: black;
+        height: 250px;
+        width: 350px;
+        margin-bottom: 2.5em;
+        margin-right: 1em;
+        margin-left: 1em;
+        
         &:visited{
             color:black
         }
@@ -129,6 +142,9 @@
         border-radius: 2px;
 
     }
+    
+}
+
 }
 
 
