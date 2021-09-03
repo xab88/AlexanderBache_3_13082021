@@ -18,11 +18,12 @@
 }
 
 .btn__menu{
-    margin-top: 3em;
-    margin-bottom: 4em;
-    margin-left: 6em;  
+    margin-top: 3em auto 4em auto;
+        
     padding-left: 3em;
     padding-right: 3em;
+    display: flex;
+    
      
 }
 

@@ -1,10 +1,11 @@
 
 @import "../utils/breakpoints",
-        "../utils/mixins";
+        "../utils/mixins",
+        "../base/base";
 
 
 #menu__img{
-        width: 375px; 
+        width: 100%; 
         height: 250px;
         object-fit: cover;
         
@@ -16,14 +17,14 @@
 .menu {
     background-color: $bg_grey;
     margin-top: -3em;
-    width: 375px;        
+    width: auto;        
     border-radius: 25px 25px 0 0;
     position: relative;
     
 
     .menu__title{  
                
-        display: flex;    
+        display: flex;  
         align-items: center;
         justify-content: space-around;
         font-family: $shrikhand;
@@ -34,6 +35,11 @@
         }
      }
     
+    .menu__courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .menu__options{
         margin-top: 1em;
         
@@ -49,16 +55,11 @@
         padding-bottom: 5px;
         width: 11%;       
     }
-        .dish1{animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;}
-        .dish2{animation: fadeInAnimation 1000ms ease-in 2500ms 1 forwards;}
-        .dish3{animation: fadeInAnimation 1000ms ease-in 2900ms 1 forwards;}
-        .dish4{animation: fadeInAnimation 1000ms ease-in 3300ms 1 forwards;}
-        .dish5{animation: fadeInAnimation 1000ms ease-in 3700ms 1 forwards;}
-        .dish6{animation: fadeInAnimation 1000ms ease-in 4100ms 1 forwards;}
-        .dish7{animation: fadeInAnimation 1000ms ease-in 4500ms 1 forwards;}
-        .dish8{animation: fadeInAnimation 1000ms ease-in 4900ms 1 forwards;}
-        .dish9{animation: fadeInAnimation 1000ms ease-in 5300ms 1 forwards;}
-        .dish10{animation: fadeInAnimation 1000ms ease-in 5700ms 1 forwards;}
+        .dish1{animation: fadeInAnimation 500ms ease-in 2100ms forwards;}
+        .dish2{animation: fadeInAnimation 500ms ease-in 2500ms forwards;}
+        .dish3{animation: fadeInAnimation 500ms ease-in 2900ms forwards;}
+        .dish4{animation: fadeInAnimation 500ms ease-in 3300ms forwards;}
+        
     
     .dish{
         cursor: pointer;
@@ -82,11 +83,8 @@
         
 
         &:hover{
-            .dish__selected{
-                color: #fff;
-                background-color: $tertiary_green;
-                font-weight: bold;
-                font-size: 25px;
+            .dish__selected{                
+                z-index: 10;
                 width: 70px;
                 height: 68px;
                 border-radius: 0 15px 15px 0;
@@ -104,10 +102,12 @@
             }
                    
         
-        .dish__name{           
-            
+        .dish__name{        
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             .dish__name--title{
-                margin: 0 0 0 0.8em; }
+                margin: 0 0 0 .8em; }
 
             .dish__name--description{
                 margin: 5px 13px 0 13px;
@@ -116,25 +116,25 @@
                 font-size: 14.5px;
                 font-weight: 400;
                 opacity: 0.8;               
-                
             } 
+            
+                  
         }
         .dish__price{
             font-weight: bold;
             opacity: .8;
-            margin-right: .5em;
-            
+            margin-right: .5em;            
         }
         .dish__visible{
             width: 340px;
             display: flex;
-            justify-content: space-between;
-           
-            
+            justify-content: space-between;           
         }
-
         .dish__selected{ 
-            width: 0;           
+            width: 0; 
+            background-color: $tertiary_green;
+            font-weight: bold;
+            font-size: 25px;          
             font-size: 25px;
             color: #fff;
             display:flex;

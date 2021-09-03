@@ -6,9 +6,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    width: 100%;
-  }
   body nav {
     width: auto;
   }
@@ -39,6 +36,56 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  body .secondary_header a {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  body .menu {
+    width: auto;
+    padding-bottom: 4em;
+  }
+  body .menu .menu__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 3em;
+  }
+  body .menu .menu__title h2 {
+    margin-right: 3em;
+  }
+  body .menu .menu__courses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .menu .btn {
+    margin: 4em auto auto auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -565,11 +612,12 @@ nav i {
 }
 
 .btn__menu {
-  margin-top: 3em;
-  margin-bottom: 4em;
-  margin-left: 6em;
+  margin-top: 3em auto 4em auto;
   padding-left: 3em;
   padding-right: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .restaurant i {
@@ -628,8 +676,8 @@ nav i {
   content: "";
   position: absolute;
   height: 25px;
-  width: 25px;
-  left: 87.4%;
+  width: 48px;
+  left: 82%;
   -webkit-animation: translate-Y-heart 1000ms ease-out forwards;
           animation: translate-Y-heart 1000ms ease-out forwards;
   background: #f6f6f6;
@@ -854,8 +902,124 @@ nav i {
   border-radius: 2px;
 }
 
+body {
+  font-family: roboto, sans-serif;
+  min-width: 375px;
+  margin: auto;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  body nav {
+    width: auto;
+  }
+  body nav ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body nav li {
+    margin-right: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body footer h3 {
+    text-align: center;
+  }
+  body footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .secondary_header a {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  body .menu {
+    width: auto;
+    padding-bottom: 4em;
+  }
+  body .menu .menu__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 3em;
+  }
+  body .menu .menu__title h2 {
+    margin-right: 3em;
+  }
+  body .menu .menu__courses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .menu .btn {
+    margin: 4em auto auto auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1146px) {
+  body .restaurant_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+h1 {
+  font-family: shrikhand;
+  font-weight: 500;
+  font-size: 33px;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
 #menu__img {
-  width: 375px;
+  width: 100%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -864,7 +1028,7 @@ nav i {
 .menu {
   background-color: #f6f6f6;
   margin-top: -3em;
-  width: 375px;
+  width: auto;
   border-radius: 25px 25px 0 0;
   position: relative;
 }
@@ -885,6 +1049,19 @@ nav i {
   font-size: 28px;
 }
 
+.menu .menu__courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menu .menu__options {
   margin-top: 1em;
 }
@@ -901,53 +1078,23 @@ nav i {
 }
 
 .menu .dish1 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 2100ms 1 forwards;
+  -webkit-animation: fadeInAnimation 500ms ease-in 2100ms forwards;
+          animation: fadeInAnimation 500ms ease-in 2100ms forwards;
 }
 
 .menu .dish2 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 2500ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 2500ms 1 forwards;
+  -webkit-animation: fadeInAnimation 500ms ease-in 2500ms forwards;
+          animation: fadeInAnimation 500ms ease-in 2500ms forwards;
 }
 
 .menu .dish3 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 2900ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 2900ms 1 forwards;
+  -webkit-animation: fadeInAnimation 500ms ease-in 2900ms forwards;
+          animation: fadeInAnimation 500ms ease-in 2900ms forwards;
 }
 
 .menu .dish4 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 3300ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 3300ms 1 forwards;
-}
-
-.menu .dish5 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 3700ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 3700ms 1 forwards;
-}
-
-.menu .dish6 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 4100ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 4100ms 1 forwards;
-}
-
-.menu .dish7 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 4500ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 4500ms 1 forwards;
-}
-
-.menu .dish8 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 4900ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 4900ms 1 forwards;
-}
-
-.menu .dish9 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 5300ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 5300ms 1 forwards;
-}
-
-.menu .dish10 {
-  -webkit-animation: fadeInAnimation 1000ms ease-in 5700ms 1 forwards;
-          animation: fadeInAnimation 1000ms ease-in 5700ms 1 forwards;
+  -webkit-animation: fadeInAnimation 500ms ease-in 3300ms forwards;
+          animation: fadeInAnimation 500ms ease-in 3300ms forwards;
 }
 
 .menu .dish {
@@ -975,10 +1122,7 @@ nav i {
 }
 
 .menu .dish:hover .dish__selected {
-  color: #fff;
-  background-color: #99E2D0;
-  font-weight: bold;
-  font-size: 25px;
+  z-index: 10;
   width: 70px;
   height: 68px;
   border-radius: 0 15px 15px 0;
@@ -998,8 +1142,14 @@ nav i {
           animation: translate-selection 500ms ease-in-out forwards;
 }
 
+.menu .dish .dish__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .menu .dish .dish__name .dish__name--title {
-  margin: 0 0 0 0.8em;
+  margin: 0 0 0 .8em;
 }
 
 .menu .dish .dish__name .dish__name--description {
@@ -1033,6 +1183,9 @@ nav i {
 
 .menu .dish .dish__selected {
   width: 0;
+  background-color: #99E2D0;
+  font-weight: bold;
+  font-size: 25px;
   font-size: 25px;
   color: #fff;
   display: -webkit-box;

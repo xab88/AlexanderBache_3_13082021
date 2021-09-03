@@ -3,7 +3,7 @@
 @mixin tablet-only {
     @media screen and (min-width:map-get($breakpoints, tablet)){
     
-        width:100%;
+        
         nav{
             width:auto;
             ol{
@@ -27,7 +27,40 @@
             }
         }
 
+        .secondary_header{
+            a{  width: 100%;
+                display: flex;
+                justify-content: start;
+                
+                
+            }
+        }
         
+        .menu{
+            width: auto;
+            padding-bottom: 4em;
+
+            .menu__title{
+                display: flex;
+                justify-content: flex-start;
+                margin-left: 3em;
+                h2{
+                    margin-right: 3em;
+                }
+            }
+            .menu__courses{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .btn{
+                margin:4em auto auto auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
     }      
 }
 
