@@ -30,7 +30,7 @@
                 font-weight: 600;
                 color: #353535;
                 opacity: 0.96;
-                padding-left: 11px;
+                
             }
             &:focus{                
                 outline: none;                
@@ -70,8 +70,7 @@
     }
     .restaurant_list{
         display: flex;
-        justify-content: space-around;
-        
+        justify-content: space-around;        
         flex-wrap: wrap;
         
     
@@ -91,8 +90,7 @@
     border: none;
     background-color: #fff;    
     display: flex;
-    flex-direction: column-reverse;
-    
+    flex-direction: column-reverse;    
     width: 350px;
     height: 250px;    
     }

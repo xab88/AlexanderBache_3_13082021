@@ -10,6 +10,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                padding-left: 1em;
             }
             li{
                 margin-right: 2em;
@@ -28,12 +29,14 @@
         }
 
         .secondary_header{
-            a{  width: 100%;
-                display: flex;
-                justify-content: start;
+            a{  
+                 display: flex;
+                 justify-content: center;              
+        
+                h1{
                 
-                
-            }
+                }
+           } 
         }
         
         .menu{
@@ -55,8 +58,9 @@
                 align-items: center;
                 flex-wrap: wrap;
             }
+            
             .btn{
-                margin:4em auto auto auto;
+                margin: 4em auto auto auto;
                 display: flex;
                 justify-content: center;
             }

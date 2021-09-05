@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 1em;
   }
   body nav li {
     margin-right: 2em;
@@ -25,9 +26,8 @@ body {
     justify-content: space-around;
   }
   body .secondary_header a {
-    width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
   }
   body .menu {
     width: auto;
@@ -104,19 +104,21 @@ footer a {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
 }
 .secondary_header a:visited {
   color: black;
 }
 .secondary_header a i {
+  position: absolute;
+  left: 1em;
   color: black;
   font-size: 22px;
   opacity: 0.8;
   margin-left: 0.8em;
 }
 .secondary_header a h1 {
-  margin-left: 50px;
   padding: 20px;
 }
 
@@ -264,6 +266,7 @@ nav ol {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 nav h3 {
   font-size: 22px;
@@ -391,7 +394,7 @@ nav i {
 }
 
 .btn__menu {
-  margin-top: 3em auto 4em auto;
+  margin: 3em auto 4em auto;
   padding-left: 3em;
   padding-right: 3em;
   display: flex;
@@ -428,11 +431,12 @@ nav i {
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
 }
 
-.menu__title i {
+.menu__title .heart i {
   font-size: 25px;
   opacity: 0.5;
+  position: relative;
 }
-.menu__title i:hover {
+.menu__title .heart i:hover {
   opacity: 0.7;
   font-weight: bold;
   color: transparent;
@@ -440,16 +444,16 @@ nav i {
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
 }
-.menu__title i:hover::after {
+.menu__title .heart i:hover::after {
   content: "";
   position: absolute;
   height: 25px;
-  width: 48px;
-  left: 82%;
+  width: 25px;
+  left: 0;
   animation: translate-Y-heart 1000ms ease-out forwards;
   background: #f6f6f6;
 }
-.menu__title i:focus {
+.menu__title .heart i:focus {
   font-weight: bold;
   color: transparent;
   background-clip: text;
@@ -488,7 +492,6 @@ nav i {
   font-weight: 600;
   color: #353535;
   opacity: 0.96;
-  padding-left: 11px;
 }
 .searchbar #search_bar:focus {
   outline: none;
@@ -600,6 +603,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 1em;
   }
   body nav li {
     margin-right: 2em;
@@ -613,9 +617,8 @@ body {
     justify-content: space-around;
   }
   body .secondary_header a {
-    width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
   }
   body .menu {
     width: auto;
