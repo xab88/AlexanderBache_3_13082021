@@ -33,9 +33,6 @@
                  display: flex;
                  justify-content: center;              
         
-                h1{
-                
-                }
            } 
         }
         
@@ -65,17 +62,20 @@
                 justify-content: center;
             }
         }
-    }      
+        .menu__options--2{
+            height: 355.39px;    
+        }
+    }
+           
 }
 
-@mixin desktop-only {
-    @media screen and (max-width:map-get($breakpoints, desktop)) {
-        .restaurant_list{
+
+
+@mixin large-desktop{
+    @media screen and (min-width:map-get($breakpoints, large-desktop)){
+        .menu__courses{
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            justify-content: center;
         }
-        
     }
-    
 }

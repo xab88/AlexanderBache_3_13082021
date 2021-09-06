@@ -17,10 +17,15 @@
 .menu {
     background-color: $bg_grey;
     margin-top: -3em;
+    margin-bottom: 0;
+    padding-bottom: 4em;
     width: auto;        
     border-radius: 25px 25px 0 0;
     position: relative;
     
+    .menu__ghost{
+        display: none;
+    }
 
     .menu__title{  
                
@@ -59,7 +64,7 @@
         .dish2{animation: fadeInAnimation 500ms ease-in 2500ms forwards;}
         .dish3{animation: fadeInAnimation 500ms ease-in 2900ms forwards;}
         .dish4{animation: fadeInAnimation 500ms ease-in 3300ms forwards;}
-        
+        //animation: name duration timing-function delay iteration-count direction fill-mode; 
     
     .dish{
         cursor: pointer;
@@ -75,12 +80,7 @@
         margin-left: 0.8em;
         box-shadow: 2px 2px 7px #dfdfdf;
         padding-top: 0.5em;        
-        overflow: hidden;
-        
-    //animation: name duration timing-function delay iteration-count direction fill-mode;
-       
-        
-        
+        overflow: hidden;      
 
         &:hover{
             .dish__selected{                
@@ -94,7 +94,6 @@
                     i{               
                     animation: check-rotate 500ms ease-in-out 200ms forwards;            
                     }
-
                 }
             .dish__price{
                 animation: translate-selection 500ms ease-in-out forwards;
@@ -102,10 +101,14 @@
             }
                    
         
-        .dish__name{        
-            white-space: nowrap;
+        .dish__name{            
             overflow: hidden;
+            white-space: nowrap;
             text-overflow: ellipsis;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
             .dish__name--title{
                 margin: 0 0 0 .8em; }
 
@@ -123,13 +126,10 @@
         .dish__price{
             font-weight: bold;
             opacity: .8;
-            margin-right: .5em;            
+            margin-right: .5em;
+            margin-left: 1em;            
         }
-        .dish__visible{
-            width: 340px;
-            display: flex;
-            justify-content: space-between;           
-        }
+        
         .dish__selected{ 
             width: 0; 
             background-color: $tertiary_green;

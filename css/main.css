@@ -1,6 +1,8 @@
 body {
   font-family: roboto, sans-serif;
   min-width: 375px;
+  max-width: 1440px;
+  position: relative;
   margin: auto;
   color: black;
 }
@@ -53,12 +55,14 @@ body {
     display: flex;
     justify-content: center;
   }
+  body .menu__options--2 {
+    height: 355.39px;
+  }
 }
-@media screen and (max-width: 1146px) {
-  body .restaurant_list {
+@media screen and (min-width: 1266px) {
+  body .menu__courses {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
@@ -394,7 +398,7 @@ nav i {
 }
 
 .btn__menu {
-  margin: 3em auto 4em auto;
+  margin: 3em auto auto auto;
   padding-left: 3em;
   padding-right: 3em;
   display: flex;
@@ -592,6 +596,8 @@ nav i {
 body {
   font-family: roboto, sans-serif;
   min-width: 375px;
+  max-width: 1440px;
+  position: relative;
   margin: auto;
   color: black;
 }
@@ -644,12 +650,14 @@ body {
     display: flex;
     justify-content: center;
   }
+  body .menu__options--2 {
+    height: 355.39px;
+  }
 }
-@media screen and (max-width: 1146px) {
-  body .restaurant_list {
+@media screen and (min-width: 1266px) {
+  body .menu__courses {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
@@ -673,9 +681,14 @@ h1 {
 .menu {
   background-color: #f6f6f6;
   margin-top: -3em;
+  margin-bottom: 0;
+  padding-bottom: 4em;
   width: auto;
   border-radius: 25px 25px 0 0;
   position: relative;
+}
+.menu .menu__ghost {
+  display: none;
 }
 .menu .menu__title {
   display: flex;
@@ -748,9 +761,13 @@ h1 {
   animation: translate-selection 500ms ease-in-out forwards;
 }
 .menu .dish .dish__name {
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .menu .dish .dish__name .dish__name--title {
   margin: 0 0 0 0.8em;
@@ -767,11 +784,7 @@ h1 {
   font-weight: bold;
   opacity: 0.8;
   margin-right: 0.5em;
-}
-.menu .dish .dish__visible {
-  width: 340px;
-  display: flex;
-  justify-content: space-between;
+  margin-left: 1em;
 }
 .menu .dish .dish__selected {
   width: 0;
