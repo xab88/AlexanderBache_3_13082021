@@ -59,23 +59,6 @@ body {
     height: 355.39px;
   }
 }
-@media screen and (min-width: 1266px) {
-  body .menu__courses {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-h1 {
-  font-family: shrikhand;
-  font-weight: 500;
-  font-size: 33px;
-  text-align: center;
-  color: black;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  margin: 0;
-}
 
 footer {
   background-color: #353535;
@@ -102,6 +85,17 @@ footer i {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+h1 {
+  font-family: shrikhand;
+  font-weight: 500;
+  font-size: 33px;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 0;
 }
 
 .secondary_header a {
@@ -486,8 +480,10 @@ nav i {
 }
 .searchbar #search_bar {
   border: none;
+  width: 200px;
   background-color: #ebebeb;
   height: 20px;
+  padding-left: 50px;
 }
 .searchbar #search_bar::placeholder {
   font-weight: bold;
@@ -498,6 +494,7 @@ nav i {
   opacity: 0.96;
 }
 .searchbar #search_bar:focus {
+  width: 200px;
   outline: none;
   color: #353535;
   font-weight: bold;
@@ -531,7 +528,10 @@ nav i {
   font-size: 24px;
 }
 .restaurant .restaurant_list {
+  max-width: 1145px;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -654,23 +654,6 @@ body {
     height: 355.39px;
   }
 }
-@media screen and (min-width: 1266px) {
-  body .menu__courses {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-h1 {
-  font-family: shrikhand;
-  font-weight: 500;
-  font-size: 33px;
-  text-align: center;
-  color: black;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  margin: 0;
-}
 
 #menu__img {
   width: 100%;
@@ -686,9 +669,6 @@ h1 {
   width: auto;
   border-radius: 25px 25px 0 0;
   position: relative;
-}
-.menu .menu__ghost {
-  display: none;
 }
 .menu .menu__title {
   display: flex;
@@ -764,7 +744,7 @@ h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 320px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -775,6 +755,7 @@ h1 {
 .menu .dish .dish__name .dish__name--description {
   margin: 5px 13px 0 13px;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   font-size: 14.5px;
   font-weight: 400;

@@ -16,7 +16,9 @@
                 margin-right: 2em;
                 display: flex;
             }
-        }     
+        } 
+        
+        
         
         footer{
             h3{
@@ -69,13 +71,3 @@
            
 }
 
-
-
-@mixin large-desktop{
-    @media screen and (min-width:map-get($breakpoints, large-desktop)){
-        .menu__courses{
-            display: flex;
-            justify-content: center;
-        }
-    }
-}

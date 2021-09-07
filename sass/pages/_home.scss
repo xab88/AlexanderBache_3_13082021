@@ -16,31 +16,36 @@
         i{
             font-size: 16px;
             color: #353535;
+            
         }
         #search_bar{        
         border: none;
+        width: 200px;
         background-color: #ebebeb;
         height: 20px;
+        padding-left: 50px;
 
 //focused placeholder to the right!!!!!
-            &::placeholder{                
-                font-weight: bold;
-                font-size: large;           
-                font-size: 16px;
-                font-weight: 600;
-                color: #353535;
-                opacity: 0.96;
-                
-            }
-            &:focus{                
-                outline: none;                
-                color: #353535;
-                font-weight: bold;
-                font-size: 16px;
-            }
-            &:focus::placeholder{
-                opacity: 0; 
-            }
+        &::placeholder{                
+            font-weight: bold;
+            font-size: large;           
+            font-size: 16px;
+            font-weight: 600;
+            color: #353535;
+            opacity: 0.96;
+            
+        }
+        &:focus{ 
+            width: 200px;                
+            outline: none;              
+            color: #353535;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        &:focus::placeholder{
+            opacity: 0; 
+        }
+            
     }
 }
 
@@ -63,86 +68,84 @@
     background-color: $bg_grey;
     margin-bottom: 0;
     padding-bottom: 2em;
+    
+    
     h2{
         padding-top: 2em;
         padding-left: 1em;
         font-size: 24px;
     }
     .restaurant_list{
-        display: flex;
-        justify-content: space-around;        
-        flex-wrap: wrap;
-        
+        max-width: 1145px;
+        display: flex;        
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-around;  
+        flex-wrap: wrap;        
     
-    img{   
-    object-fit: cover;
-    object-position: center;  
-    overflow: hidden;  
-    border-radius: 20px 20px 0 0;        
-    }
-
-    figure{
-    position: relative;
-    margin: 0 0 0;
-    border-radius: 20px;
-    box-shadow: 2px 2px 7px #dfdfdf;
-    border: none;
-    background-color: #fff;    
-    display: flex;
-    flex-direction: column-reverse;    
-    width: 350px;
-    height: 250px;    
-    }
-
-    figcaption{
-    display: flex;
-    justify-content: space-between;
-    height: 75px;
-    padding-left: 1em;
-    p{
-        margin-top: 0;
-    }
-    h3{
-        margin-bottom: 5px;
-        margin-top: 10px;
-    }
-}
-
-    a{
-        text-decoration: none;
-        color: black;
-        height: 250px;
-        width: 350px;
-        margin-bottom: 2.5em;
-        margin-right: 1em;
-        margin-left: 1em;
-        
-        &:visited{
-            color:black
+        img{   
+        object-fit: cover;
+        object-position: center;  
+        overflow: hidden;  
+        border-radius: 20px 20px 0 0;        
         }
-    }
-
-    i{
-        margin-top: 25px;
-    }
-
-
-    .new_sticker{
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        background-color: $tertiary_green;
-        font-size: 15px;
-        font-weight: 600;
-        color: #0f9071;
-        padding: 5px 12px;
-        border-radius: 2px;
-
-    }
     
-  }
+        figure{
+        position: relative;
+        margin: 0 0 0;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px #dfdfdf;
+        border: none;
+        background-color: #fff;    
+        display: flex;
+        flex-direction: column-reverse;    
+        width: 350px;
+        height: 250px;    
+        }
+    
+        figcaption{
+        display: flex;
+        justify-content: space-between;
+        height: 75px;
+        padding-left: 1em;
+            p{
+                margin-top: 0;
+            }
+            h3{
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+        }    
 
+        a{
+            text-decoration: none;
+            color: black;
+            height: 250px;
+            width: 350px;
+            margin-bottom: 2.5em;
+            margin-right: 1em;
+            margin-left: 1em;
+            
+            &:visited{
+                color:black
+            }
+        }
+    
+        i{
+            margin-top: 25px;
+        }
+    
+    
+        .new_sticker{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: $tertiary_green;
+            font-size: 15px;
+            font-weight: 600;
+            color: #0f9071;
+            padding: 5px 12px;
+            border-radius: 2px;    
+        }        
+    }
 }
-
-
-

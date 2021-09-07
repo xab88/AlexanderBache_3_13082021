@@ -1,9 +1,5 @@
 @import "../utils/breakpoints",
         "../utils/mixins";
-
-
-
-
 body{
     font-family: roboto, sans-serif;
     min-width: 375px;
@@ -11,21 +7,9 @@ body{
     position: relative;
     margin: auto;
     color: black;
-    @include tablet-only;
-    @include large-desktop;
-   
+    @include tablet-only;   
 }
 
 
-h1{
-    font-family: shrikhand;
-    font-weight: 500;
-    font-size: 33px;
-    text-align: center;
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    margin: 0;
-    
-}
+
 

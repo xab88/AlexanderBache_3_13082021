@@ -94,28 +94,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1266px) {
-  body .menu__courses {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-h1 {
-  font-family: shrikhand;
-  font-weight: 500;
-  font-size: 33px;
-  text-align: center;
-  color: black;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  margin: 0;
-}
-
 footer {
   background-color: #353535;
   color: #fff;
@@ -145,6 +123,17 @@ footer i {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+h1 {
+  font-family: shrikhand;
+  font-weight: 500;
+  font-size: 33px;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 0;
 }
 
 .secondary_header a {
@@ -730,8 +719,10 @@ nav i {
 
 .searchbar #search_bar {
   border: none;
+  width: 200px;
   background-color: #ebebeb;
   height: 20px;
+  padding-left: 50px;
 }
 
 .searchbar #search_bar::-webkit-input-placeholder {
@@ -771,6 +762,7 @@ nav i {
 }
 
 .searchbar #search_bar:focus {
+  width: 200px;
   outline: none;
   color: #353535;
   font-weight: bold;
@@ -819,9 +811,12 @@ nav i {
 }
 
 .restaurant .restaurant_list {
+  max-width: 1145px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
@@ -1002,28 +997,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1266px) {
-  body .menu__courses {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-h1 {
-  font-family: shrikhand;
-  font-weight: 500;
-  font-size: 33px;
-  text-align: center;
-  color: black;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  margin: 0;
-}
-
 #menu__img {
   width: 100%;
   height: 250px;
@@ -1039,10 +1012,6 @@ h1 {
   width: auto;
   border-radius: 25px 25px 0 0;
   position: relative;
-}
-
-.menu .menu__ghost {
-  display: none;
 }
 
 .menu .menu__title {
@@ -1158,7 +1127,7 @@ h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 320px;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1180,6 +1149,8 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
