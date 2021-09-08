@@ -169,7 +169,7 @@ h1 {
     transform: scale(0.5);
   }
   100% {
-    transform: rotate(1);
+    transform: scale(1);
   }
 }
 @keyframes loading-transition {
@@ -249,7 +249,7 @@ h1 {
     transform: scale(0.5);
   }
   100% {
-    transform: rotate(1);
+    transform: scale(1);
   }
 }
 @keyframes loading-transition {
@@ -331,7 +331,7 @@ nav li:hover i {
 }
 nav li:focus {
   transform: scale(1);
-  background-color: lighten #9356DC, 35;
+  background-color: #9356DC, 35;
 }
 nav li::before {
   counter-increment: li;
@@ -366,7 +366,7 @@ nav i {
     transform: scale(0.5);
   }
   100% {
-    transform: rotate(1);
+    transform: scale(1);
   }
 }
 @keyframes loading-transition {
@@ -799,7 +799,6 @@ body {
   overflow: hidden;
 }
 .menu .dish:hover .dish__selected {
-  z-index: 10;
   width: 70px;
   height: 68px;
   border-radius: 0 15px 15px 0;
@@ -825,12 +824,15 @@ body {
 }
 .menu .dish .dish__name .dish__name--title {
   margin: 0 0 0 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu .dish .dish__name .dish__name--description {
   margin: 5px 13px 0 13px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 14.5px;
   font-weight: 400;
   opacity: 0.8;
@@ -840,7 +842,6 @@ body {
   opacity: 0.8;
   margin-right: 0.5em;
   margin-left: 1em;
-  z-index: 10;
 }
 .menu .dish .dish__selected {
   width: 0;

@@ -8,11 +8,7 @@
         width: 100%; 
         height: 250px;
         object-fit: cover;
-        
-
     }
-
-
 
 .menu {
     background-color: $bg_grey;
@@ -21,17 +17,13 @@
     padding-bottom: 4em;
     width: auto;        
     border-radius: 25px 25px 0 0;
-    position: relative;
-    
-    
+    position: relative;   
 
-    .menu__title{  
-               
+    .menu__title{                
         display: flex;  
         align-items: center;
         justify-content: space-around;
-        font-family: $shrikhand;
-        
+        font-family: $shrikhand;        
         
         h2{
             font-size: 28px;            
@@ -44,8 +36,7 @@
         align-items: center;
     }
     .menu__options{
-        margin-top: 1em;
-        
+        margin-top: 1em;        
     } 
     
     h3{
@@ -82,8 +73,7 @@
         overflow: hidden;      
 
         &:hover{
-            .dish__selected{                
-                z-index: 10;
+            .dish__selected{                 
                 width: 70px;
                 height: 68px;
                 border-radius: 0 15px 15px 0;
@@ -98,10 +88,9 @@
             .dish__price{
                 animation: translate-selection 500ms ease-in-out forwards;
                 }             
-            }
-                   
+            }                   
         
-        .dish__name{ 
+        .dish__name{             
             position: relative;           
             overflow: hidden;
             white-space: nowrap;
@@ -111,13 +100,17 @@
             flex-direction: column;
             justify-content: space-between; 
             .dish__name--title{
-                margin: 0 0 0 .8em; }
+                margin: 0 0 0 .8em;
+                overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            }
 
             .dish__name--description{                
                 margin: 5px 13px 0 13px;
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: space-between;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
                 font-size: 14.5px;
                 font-weight: 400;
                 opacity: 0.8;               
@@ -128,8 +121,7 @@
             font-weight: bold;
             opacity: .8;
             margin-right: .5em;
-            margin-left: 1em; 
-            z-index: 10;           
+            margin-left: 1em;                       
         }
         
         .dish__selected{ 
@@ -142,6 +134,6 @@
             display:flex;
             justify-content: center;  
             align-items: center;          
-       }   
+        }   
     }
 }
