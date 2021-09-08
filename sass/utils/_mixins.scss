@@ -14,11 +14,24 @@
             }
             li{
                 margin-right: 2em;
-                display: flex;
+                
             }
         } 
-        
-        
+       .restaurant{
+           .restaurant_list{
+              display: flex;
+              align-items: center;
+              
+               figure{
+                    width: 370px;                                 
+               }
+               a{
+                   width: 370px;
+                   margin-left: 0;
+                   margin-right: 0;
+               }
+           }
+       }     
         
         footer{
             h3{
@@ -29,6 +42,8 @@
                 justify-content: space-around;
             }
         }
+
+        
 
         .secondary_header{
             a{  
@@ -70,4 +85,40 @@
     }
            
 }
+
+
+@mixin large-tablet-only {
+    @media screen and (min-width:map-get($breakpoints, large-tablet)){
+        .restaurant{
+            .restaurant_list{
+               display: flex;
+               align-items: center;
+                figure{
+                     width: 450px;                                   
+                }
+                a{
+                    width: 450px;
+                }
+            }
+        } 
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width:map-get($breakpoints, desktop)){
+        .restaurant{
+            .restaurant_list{
+               display: flex;
+               align-items: center;
+                figure{
+                     width: 520px;                                   
+                }
+                a{
+                    width: 520px;
+                }
+            }
+        } 
+    }
+}
+
 

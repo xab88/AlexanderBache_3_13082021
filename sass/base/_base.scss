@@ -7,7 +7,9 @@ body{
     position: relative;
     margin: auto;
     color: black;
-    @include tablet-only;   
+    @include tablet-only; 
+    @include large-tablet-only; 
+    @include desktop-only; 
 }
 
 
