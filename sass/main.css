@@ -1,7 +1,7 @@
 body {
   font-family: roboto, sans-serif;
   min-width: 375px;
-  max-width: 1440px;
+  max-width: 1600px;
   position: relative;
   margin: auto;
   color: black;
@@ -26,14 +26,6 @@ body {
   }
   body nav li {
     margin-right: 2em;
-  }
-  body .restaurant .restaurant_list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   body .restaurant .restaurant_list figure {
     width: 370px;
@@ -108,14 +100,6 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-  body .restaurant .restaurant_list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   body .restaurant .restaurant_list figure {
     width: 450px;
   }
@@ -125,6 +109,15 @@ body {
 }
 
 @media screen and (min-width: 1146px) {
+  body .restaurant .restaurant_list figure {
+    width: 520px;
+  }
+  body .restaurant .restaurant_list a {
+    width: 520px;
+  }
+}
+
+@media screen and (min-width: 1266px) {
   body .restaurant .restaurant_list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -134,10 +127,11 @@ body {
             align-items: center;
   }
   body .restaurant .restaurant_list figure {
-    width: 520px;
+    width: 550px;
   }
   body .restaurant .restaurant_list a {
-    width: 520px;
+    width: 550px;
+    margin-left: 1em;
   }
 }
 
@@ -952,7 +946,7 @@ nav i {
 body {
   font-family: roboto, sans-serif;
   min-width: 375px;
-  max-width: 1440px;
+  max-width: 1600px;
   position: relative;
   margin: auto;
   color: black;
@@ -977,14 +971,6 @@ body {
   }
   body nav li {
     margin-right: 2em;
-  }
-  body .restaurant .restaurant_list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   body .restaurant .restaurant_list figure {
     width: 370px;
@@ -1059,14 +1045,6 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-  body .restaurant .restaurant_list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   body .restaurant .restaurant_list figure {
     width: 450px;
   }
@@ -1076,6 +1054,15 @@ body {
 }
 
 @media screen and (min-width: 1146px) {
+  body .restaurant .restaurant_list figure {
+    width: 520px;
+  }
+  body .restaurant .restaurant_list a {
+    width: 520px;
+  }
+}
+
+@media screen and (min-width: 1266px) {
   body .restaurant .restaurant_list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1085,10 +1072,11 @@ body {
             align-items: center;
   }
   body .restaurant .restaurant_list figure {
-    width: 520px;
+    width: 550px;
   }
   body .restaurant .restaurant_list a {
-    width: 520px;
+    width: 550px;
+    margin-left: 1em;
   }
 }
 

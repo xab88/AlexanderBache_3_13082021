@@ -19,8 +19,7 @@
         } 
        .restaurant{
            .restaurant_list{
-              display: flex;
-              align-items: center;
+              
               
                figure{
                     width: 370px;                                 
@@ -91,8 +90,7 @@
     @media screen and (min-width:map-get($breakpoints, large-tablet)){
         .restaurant{
             .restaurant_list{
-               display: flex;
-               align-items: center;
+              
                 figure{
                      width: 450px;                                   
                 }
@@ -108,13 +106,31 @@
     @media screen and (min-width:map-get($breakpoints, desktop)){
         .restaurant{
             .restaurant_list{
-               display: flex;
-               align-items: center;
+              
                 figure{
                      width: 520px;                                   
                 }
                 a{
                     width: 520px;
+                }
+            }
+        } 
+    }
+}
+
+@mixin large-desktop-only {
+    @media screen and (min-width:map-get($breakpoints, large-desktop)){
+        .restaurant{
+            .restaurant_list{
+              display: flex;
+              align-items:center ;
+
+                figure{
+                     width: 550px;                                   
+                }
+                a{
+                    width: 550px;
+                    margin-left: 1em;
                 }
             }
         } 

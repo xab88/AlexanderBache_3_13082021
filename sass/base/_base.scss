@@ -3,13 +3,14 @@
 body{
     font-family: roboto, sans-serif;
     min-width: 375px;
-    max-width: 1440px;
+    max-width: 1600px;
     position: relative;
     margin: auto;
     color: black;
     @include tablet-only; 
     @include large-tablet-only; 
     @include desktop-only; 
+    @include large-desktop-only;
 }
 
 
