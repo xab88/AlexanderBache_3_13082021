@@ -331,7 +331,7 @@ nav li:hover i {
 }
 nav li:focus {
   transform: scale(1);
-  background-color: #9356DC, 35;
+  background-color: #f2eafb;
 }
 nav li::before {
   counter-increment: li;
@@ -813,10 +813,7 @@ body {
   animation: translate-selection 500ms ease-in-out forwards;
 }
 .menu .dish .dish__name {
-  position: relative;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   width: 300px;
   display: flex;
   flex-direction: column;

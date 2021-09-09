@@ -4,10 +4,6 @@
         opacity: .5;   
         font-size: 25px;
         margin-right: 25px; 
-        
-        
-//use pointer-events to make it fill but no clic!!!!
-
         &:hover{
             opacity: .7;
             font-weight: bold;
@@ -23,17 +19,16 @@
                 right: 25px;             
                 animation: translate-Y-heart 1000ms ease-out forwards;             
                 background:#fff;
-                }        
-            }
-            &:active{
-                pointer-events:none;
-                font-weight: bold;
-                color: transparent;
-                background-clip: text;
-                -webkit-background-clip: text;
-                background-image: linear-gradient(to top, $secondary_pink, $primary_purple);         
-            
-            }   
+            }        
+        }
+        &:active{
+            pointer-events:none;
+            font-weight: bold;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to top, $secondary_pink, $primary_purple);        
+        }   
     } 
 }
 
@@ -42,10 +37,10 @@
 
 .menu__title{
     .heart{
-    i{
-        font-size: 25px;
-        opacity: 0.5;
-        position: relative;
+        i{
+            font-size: 25px;
+            opacity: 0.5;
+            position: relative;
             &:hover{
                 opacity: 0.7;
                 font-weight: bold;
@@ -60,21 +55,17 @@
                     width: 25px;
                     left: 0;
                     animation: translate-Y-heart 1000ms ease-out forwards;            
-                    background: $bg_grey;
-                    
-                    
+                    background: $bg_grey;                   
                 }
-            }
-            
+            }    
 
             &:focus{
                 font-weight: bold;
                 color: transparent;
                 background-clip: text;
                 -webkit-background-clip: text;
-                background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
-                
+                background-image: linear-gradient(to top, $secondary_pink, $primary_purple);                
             }
+        }
     }
-}
 }

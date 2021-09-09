@@ -36,11 +36,10 @@ nav{
            i{
             color: $primary_purple;
            }           
-       } 
-
+        } 
        &:focus{
            transform: scale(1);
-           background-color: lighten ($primary_purple, 35);           
+           background-color: lighten($primary_purple, 35);           
        }      
     }
 
