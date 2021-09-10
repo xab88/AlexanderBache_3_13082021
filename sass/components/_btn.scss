@@ -1,3 +1,5 @@
+//Btn main settings
+
 .btn{
     margin-top: 0.5em;
     padding: 15px 30px;
@@ -12,19 +14,17 @@
     transform: scale(1);
     transition: transform .5s;
     &:hover{
-        transform: scale(1.2);
-        
+        transform: scale(1.2);        
     }
 }
 
+//Btn for menu pages
+
 .btn__menu{
-    margin: 3em auto auto auto;
-        
+    margin: 3em auto auto auto;        
     padding-left: 3em;
     padding-right: 3em;
-    display: flex;
-    
-     
+    display: flex;    
 }
 
 

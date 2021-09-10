@@ -175,11 +175,11 @@ h1 {
 @keyframes loading-transition {
   0% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   70% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   100% {
     opacity: 0;
@@ -218,7 +218,7 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 100;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   display: flex;
   align-items: center;
@@ -255,11 +255,11 @@ h1 {
 @keyframes loading-transition {
   0% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   70% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   100% {
     opacity: 0;
@@ -372,11 +372,11 @@ nav i {
 @keyframes loading-transition {
   0% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   70% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   100% {
     opacity: 0;
@@ -435,15 +435,15 @@ nav i {
 }
 
 .restaurant i {
-  opacity: 0.5;
   font-size: 25px;
+  opacity: 0.5;
   margin-right: 25px;
 }
 .restaurant i:hover {
   opacity: 0.7;
   font-weight: bold;
   color: transparent;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
 }
@@ -456,11 +456,10 @@ nav i {
   animation: translate-Y-heart 1000ms ease-out forwards;
   background: #fff;
 }
-.restaurant i:active {
-  pointer-events: none;
+.restaurant i:focus {
   font-weight: bold;
   color: transparent;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
 }
@@ -474,7 +473,7 @@ nav i {
   opacity: 0.7;
   font-weight: bold;
   color: transparent;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
 }
@@ -490,7 +489,7 @@ nav i {
 .menu__title .heart i:focus {
   font-weight: bold;
   color: transparent;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
 }

@@ -1,3 +1,5 @@
+//Body for all pages
+
 @import "../utils/breakpoints",
         "../utils/mixins";
 body{
@@ -12,6 +14,8 @@ body{
     @include desktop-only; 
     @include large-desktop-only;
 }
+
+
 
 
 

@@ -1,14 +1,15 @@
+//heart animation setting for Homepage
 
 .restaurant{
-    i{         
-        opacity: .5;   
-        font-size: 25px;
+    i{  
+        font-size: 25px;       
+        opacity: .5;         
         margin-right: 25px; 
         &:hover{
             opacity: .7;
             font-weight: bold;
             color: transparent;
-            background-clip: text;
+            background-clip: content-box;
             -webkit-background-clip: text;
             background-image: linear-gradient(to top, $secondary_pink, $primary_purple);
             &::after{
@@ -21,31 +22,29 @@
                 background:#fff;
             }        
         }
-        &:active{
-            pointer-events:none;
+        &:focus{
             font-weight: bold;
             color: transparent;
-            background-clip: text;
+            background-clip: content-box;
             -webkit-background-clip: text;
             background-image: linear-gradient(to top, $secondary_pink, $primary_purple);        
         }   
     } 
 }
 
-// figure out why menu heart icon animation moves with screen change!!!!
-
+//Heart animation settings for menu pages
 
 .menu__title{
     .heart{
         i{
             font-size: 25px;
-            opacity: 0.5;
+            opacity: .5;
             position: relative;
             &:hover{
-                opacity: 0.7;
+                opacity: .7;
                 font-weight: bold;
                 color: transparent;
-                background-clip: text;
+                background-clip: content-box;
                 -webkit-background-clip: text;
                 background-image: linear-gradient(to top, $secondary_pink, $primary_purple);  
                 &::after{
@@ -57,12 +56,11 @@
                     animation: translate-Y-heart 1000ms ease-out forwards;            
                     background: $bg_grey;                   
                 }
-            }    
-
+            }
             &:focus{
                 font-weight: bold;
                 color: transparent;
-                background-clip: text;
+                background-clip: content-box;
                 -webkit-background-clip: text;
                 background-image: linear-gradient(to top, $secondary_pink, $primary_purple);                
             }

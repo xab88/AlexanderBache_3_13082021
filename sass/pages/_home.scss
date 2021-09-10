@@ -1,3 +1,5 @@
+//Searchbar
+
 .geosearch{
     width: 100%;
     background-color: $bg_grey;
@@ -15,8 +17,7 @@
     
         i{
             font-size: 16px;
-            color: #353535;
-            
+            color: #353535;            
         }
         #search_bar{        
         border: none;
@@ -25,15 +26,13 @@
         height: 20px;
         padding-left: 50px;
 
-//focused placeholder to the right!!!!!
         &::placeholder{                
             font-weight: bold;
             font-size: large;           
             font-size: 16px;
             font-weight: 600;
             color: #353535;
-            opacity: 0.96;
-            
+            opacity: 0.96;            
         }
         &:focus{ 
             width: 200px;                
@@ -41,12 +40,11 @@
             color: #353535;
             font-weight: bold;
             font-size: 16px;
-            z-index: 1000;
+            z-index: 1000;            
         }
         &:focus::placeholder{
             opacity: 0; 
-        }
-            
+        }            
     }
 }
 
@@ -54,22 +52,22 @@
     font-weight: 900;
     font-size: 26px;
     margin: 35px 35px 0px 35px;
-
 }
 
 .geosearch p{
     margin-top: 10px;
     font-size: 18px;
     font-weight: 400;
-    color: #575757;
-    
+    color: #575757;    
 }
+
+//Restaurant list
 
 .restaurant{
     background-color: $bg_grey;
     margin-bottom: 0;
-    padding-bottom: 2em;    
-    
+    padding-bottom: 2em; 
+
     h2{
         padding-top: 2em;
         padding-left: 1em;
@@ -135,6 +133,7 @@
             
         }
     
+    //New restaurants indication
     
         .new_sticker{
             position: absolute;

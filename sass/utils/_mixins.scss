@@ -1,4 +1,4 @@
-
+//Mixins and details for various responsive changes
 
 @mixin tablet-only {
     @media screen and (min-width:map-get($breakpoints, tablet)){

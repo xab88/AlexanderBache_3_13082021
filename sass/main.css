@@ -255,11 +255,11 @@ h1 {
 @-webkit-keyframes loading-transition {
   0% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   70% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   100% {
     opacity: 0;
@@ -270,11 +270,11 @@ h1 {
 @keyframes loading-transition {
   0% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   70% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   100% {
     opacity: 0;
@@ -358,7 +358,7 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 100;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   display: -webkit-box;
@@ -410,11 +410,11 @@ h1 {
 @keyframes loading-transition {
   0% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   70% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   100% {
     opacity: 0;
@@ -575,11 +575,11 @@ nav i {
 @keyframes loading-transition {
   0% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   70% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
   }
   100% {
     opacity: 0;
@@ -658,8 +658,8 @@ nav i {
 }
 
 .restaurant i {
-  opacity: .5;
   font-size: 25px;
+  opacity: .5;
   margin-right: 25px;
 }
 
@@ -667,7 +667,7 @@ nav i {
   opacity: .7;
   font-weight: bold;
   color: transparent;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
@@ -684,11 +684,10 @@ nav i {
   background: #fff;
 }
 
-.restaurant i:active {
-  pointer-events: none;
+.restaurant i:focus {
   font-weight: bold;
   color: transparent;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
@@ -696,15 +695,15 @@ nav i {
 
 .menu__title .heart i {
   font-size: 25px;
-  opacity: 0.5;
+  opacity: .5;
   position: relative;
 }
 
 .menu__title .heart i:hover {
-  opacity: 0.7;
+  opacity: .7;
   font-weight: bold;
   color: transparent;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
@@ -724,7 +723,7 @@ nav i {
 .menu__title .heart i:focus {
   font-weight: bold;
   color: transparent;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
