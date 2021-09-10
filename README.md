@@ -8,7 +8,7 @@
 
 - [Description](#description)
 - [Cible](#Cible)
-- [Identité graphique](identité_graphique)
+- [Identité graphique](identité/graphique)
 - [Couleurs](couleurs)
 
 ---
