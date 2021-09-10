@@ -1,15 +1,15 @@
-# OhMyFood! 
-
 ![project Image](img/logo/ohmyfood.png)
 
 ---
 
-- [Voir la page](#https://xab88.github.io/AlexanderBache_3_13082021/) 
+- [Voir la page](https://xab88.github.io/AlexanderBache_3_13082021/) 
 
 ### Contenu
 
 - [Description](#description)
-- [Réferences](#references)
+- [Cible](#Cible)
+- [Identité graphique](identité_graphique)
+- [Couleurs](couleurs)
 
 ---
 
