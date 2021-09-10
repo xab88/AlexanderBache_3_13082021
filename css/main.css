@@ -21,8 +21,6 @@ body {
   }
   body .restaurant .restaurant_list a {
     width: 40%;
-    margin-left: 0;
-    margin-right: 0;
   }
   body footer h3 {
     text-align: center;
@@ -272,10 +270,12 @@ nav ol {
   flex-direction: column;
   align-items: center;
   padding: 0;
+  margin-bottom: 3em;
 }
 nav h3 {
   font-size: 22px;
   margin-left: 1em;
+  margin-bottom: 0;
 }
 nav li {
   width: 80%;
@@ -623,8 +623,6 @@ body {
   }
   body .restaurant .restaurant_list a {
     width: 40%;
-    margin-left: 0;
-    margin-right: 0;
   }
   body footer h3 {
     text-align: center;

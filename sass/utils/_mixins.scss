@@ -1,11 +1,10 @@
 //Mixins and details for various responsive changes
 
 @mixin tablet-only {
-    @media screen and (min-width:map-get($breakpoints, tablet)){
-    
-        
+    @media screen and (min-width:map-get($breakpoints, tablet)){       
         nav{
             width:auto;
+            
             ol{
                 display: flex;
                 flex-direction: row;
@@ -20,9 +19,7 @@
        .restaurant{
            .restaurant_list{            
                a{
-                   width: 40%;
-                   margin-left: 0;
-                   margin-right: 0;
+                   width: 40%;                   
                }
            }
        }       
@@ -38,8 +35,7 @@
         .secondary_header{
             a{  
                  display: flex;
-                 justify-content: center;              
-        
+                 justify-content: center;         
            } 
         }
         
@@ -58,8 +54,7 @@
 
             h3{
                 margin-left: 2em;
-            }
-            
+            }            
             
             .btn{
                 margin: 4em auto auto auto;
