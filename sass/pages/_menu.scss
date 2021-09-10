@@ -35,7 +35,7 @@
     .menu__courses{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
     }
     .menu__options{
         margin-top: 1em;        
@@ -49,7 +49,7 @@
         border-bottom: 3px solid $tertiary_green;
         font-size: 16px;
         padding-bottom: 5px;
-        width: 11%;       
+        width: 2.5em;       
     }
     
     //menu selection fadeIn animation
@@ -70,13 +70,14 @@
         justify-content: space-between;
         background-color: #fff;
         border-radius: 15px;
-        width: 350px;
+        margin-left: 2em;
+        margin-right: 2em;    
         height: 60px;
         color: black;
         margin-top: .8em;
-        margin-left: 0.8em;
         box-shadow: 2px 2px 7px #dfdfdf;
-        padding-top: 0.5em;        
+        padding-top: 0.2em;
+        padding-bottom: .2em;        
         overflow: hidden;      
 
         &:hover{
@@ -84,8 +85,8 @@
                 width: 70px;
                 height: 68px;
                 border-radius: 0 15px 15px 0;
-                position: relative;
-                top: -4px;
+                
+                
                 animation: translate-selection 500ms ease-in-out forwards;
                     i{               
                     animation: check-rotate 500ms ease-in-out 200ms forwards;            
@@ -99,7 +100,7 @@
         
         .dish__name{                     
             overflow: hidden;            
-            width: 300px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between; 

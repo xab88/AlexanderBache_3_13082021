@@ -59,13 +59,7 @@
                     margin-right: 3em;
                 }
             }
-            .menu__courses{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                flex-wrap: wrap;
-            }
+            
             
             .btn{
                 margin: 4em auto auto auto;
@@ -73,11 +67,7 @@
                 justify-content: center;
             }
         }
-        .menu__options--2{
-            height: 355.39px;    
-        }
-    }
-           
+    }           
 }
 
 
@@ -94,6 +84,19 @@
                 }
             }
         } 
+        html{
+            height: 100%;
+        }
+        .menu{
+            .menu__courses{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .menu__options{
+                    width: 33%;
+                }
+            }
+        }
     }
 }
 
@@ -109,7 +112,7 @@
                     width: 520px;
                 }
             }
-        } 
+        }
     }
 }
 
@@ -128,7 +131,7 @@
                     margin-left: 1em;
                 }
             }
-        } 
+        }
     }
 }
 
