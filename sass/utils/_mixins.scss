@@ -9,22 +9,18 @@
             ol{
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: space-around;
                 padding-left: 1em;
             }
             li{
                 margin-right: 2em;
-                
+                width: 25%;
             }
         } 
        .restaurant{
-           .restaurant_list{           
-              
-               figure{
-                    width: 370px;                                 
-               }
+           .restaurant_list{            
                a{
-                   width: 370px;
+                   width: 40%;
                    margin-left: 0;
                    margin-right: 0;
                }
@@ -54,10 +50,14 @@
             .menu__title{
                 display: flex;
                 justify-content: flex-start;
-                margin-left: 3em;
+                margin-left: 2em;
                 h2{
                     margin-right: 3em;
                 }
+            }
+
+            h3{
+                margin-left: 2em;
             }
             
             
@@ -72,21 +72,8 @@
 
 
 @mixin large-tablet-only {
-    @media screen and (min-width:map-get($breakpoints, large-tablet)){
-        .restaurant{
-            .restaurant_list{
-              
-                figure{
-                     width: 450px;                                   
-                }
-                a{
-                    width: 450px;
-                }
-            }
-        } 
-        html{
-            height: 100%;
-        }
+    @media screen and (min-width:map-get($breakpoints, large-tablet)){  
+        
         .menu{
             .menu__courses{
                 display: flex;
@@ -99,40 +86,3 @@
         }
     }
 }
-
-@mixin desktop-only {
-    @media screen and (min-width:map-get($breakpoints, desktop)){
-        .restaurant{
-            .restaurant_list{
-              
-                figure{
-                     width: 520px;                                   
-                }
-                a{
-                    width: 520px;
-                }
-            }
-        }
-    }
-}
-
-@mixin large-desktop-only {
-    @media screen and (min-width:map-get($breakpoints, large-desktop)){
-        .restaurant{
-            .restaurant_list{
-              display: flex;
-              align-items:center ;
-
-                figure{
-                     width: 550px;                                   
-                }
-                a{
-                    width: 550px;
-                    margin-left: 1em;
-                }
-            }
-        }
-    }
-}
-
-

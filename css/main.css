@@ -12,17 +12,15 @@ body {
   body nav ol {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     padding-left: 1em;
   }
   body nav li {
     margin-right: 2em;
-  }
-  body .restaurant .restaurant_list figure {
-    width: 370px;
+    width: 25%;
   }
   body .restaurant .restaurant_list a {
-    width: 370px;
+    width: 40%;
     margin-left: 0;
     margin-right: 0;
   }
@@ -44,10 +42,13 @@ body {
   body .menu .menu__title {
     display: flex;
     justify-content: flex-start;
-    margin-left: 3em;
+    margin-left: 2em;
   }
   body .menu .menu__title h2 {
     margin-right: 3em;
+  }
+  body .menu h3 {
+    margin-left: 2em;
   }
   body .menu .btn {
     margin: 4em auto auto auto;
@@ -56,15 +57,6 @@ body {
   }
 }
 @media screen and (min-width: 1100px) {
-  body .restaurant .restaurant_list figure {
-    width: 450px;
-  }
-  body .restaurant .restaurant_list a {
-    width: 450px;
-  }
-  body html {
-    height: 100%;
-  }
   body .menu .menu__courses {
     display: flex;
     flex-direction: row;
@@ -72,27 +64,6 @@ body {
   }
   body .menu .menu__courses .menu__options {
     width: 33%;
-  }
-}
-@media screen and (min-width: 1146px) {
-  body .restaurant .restaurant_list figure {
-    width: 520px;
-  }
-  body .restaurant .restaurant_list a {
-    width: 520px;
-  }
-}
-@media screen and (min-width: 1266px) {
-  body .restaurant .restaurant_list {
-    display: flex;
-    align-items: center;
-  }
-  body .restaurant .restaurant_list figure {
-    width: 550px;
-  }
-  body .restaurant .restaurant_list a {
-    width: 550px;
-    margin-left: 1em;
   }
 }
 
@@ -307,7 +278,7 @@ nav h3 {
   margin-left: 1em;
 }
 nav li {
-  width: 240px;
+  width: 80%;
   display: flex;
   align-items: center;
   margin-top: 2em;
@@ -351,6 +322,7 @@ nav i {
   margin-right: 1.5em;
   margin-left: 1em;
   color: #7d7d7d;
+  font-size: large;
 }
 
 @keyframes translate-Y-heart {
@@ -564,7 +536,6 @@ nav i {
   font-size: 24px;
 }
 .restaurant .restaurant_list {
-  max-width: 1145px;
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -586,7 +557,7 @@ nav i {
   background-color: #fff;
   display: flex;
   flex-direction: column-reverse;
-  width: 350px;
+  width: 100%;
   height: 250px;
 }
 .restaurant .restaurant_list figcaption {
@@ -606,7 +577,7 @@ nav i {
   text-decoration: none;
   color: black;
   height: 250px;
-  width: 350px;
+  width: 90%;
   margin-bottom: 2.5em;
   margin-right: 1em;
   margin-left: 1em;
@@ -643,17 +614,15 @@ body {
   body nav ol {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     padding-left: 1em;
   }
   body nav li {
     margin-right: 2em;
-  }
-  body .restaurant .restaurant_list figure {
-    width: 370px;
+    width: 25%;
   }
   body .restaurant .restaurant_list a {
-    width: 370px;
+    width: 40%;
     margin-left: 0;
     margin-right: 0;
   }
@@ -675,10 +644,13 @@ body {
   body .menu .menu__title {
     display: flex;
     justify-content: flex-start;
-    margin-left: 3em;
+    margin-left: 2em;
   }
   body .menu .menu__title h2 {
     margin-right: 3em;
+  }
+  body .menu h3 {
+    margin-left: 2em;
   }
   body .menu .btn {
     margin: 4em auto auto auto;
@@ -687,15 +659,6 @@ body {
   }
 }
 @media screen and (min-width: 1100px) {
-  body .restaurant .restaurant_list figure {
-    width: 450px;
-  }
-  body .restaurant .restaurant_list a {
-    width: 450px;
-  }
-  body html {
-    height: 100%;
-  }
   body .menu .menu__courses {
     display: flex;
     flex-direction: row;
@@ -703,27 +666,6 @@ body {
   }
   body .menu .menu__courses .menu__options {
     width: 33%;
-  }
-}
-@media screen and (min-width: 1146px) {
-  body .restaurant .restaurant_list figure {
-    width: 520px;
-  }
-  body .restaurant .restaurant_list a {
-    width: 520px;
-  }
-}
-@media screen and (min-width: 1266px) {
-  body .restaurant .restaurant_list {
-    display: flex;
-    align-items: center;
-  }
-  body .restaurant .restaurant_list figure {
-    width: 550px;
-  }
-  body .restaurant .restaurant_list a {
-    width: 550px;
-    margin-left: 1em;
   }
 }
 
@@ -745,7 +687,9 @@ body {
 .menu .menu__title {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   font-family: "shrikhand";
 }
 .menu .menu__title h2 {
@@ -760,7 +704,7 @@ body {
 }
 .menu h3 {
   margin-top: 0;
-  margin-left: 0.8em;
+  margin-left: 1.5em;
   opacity: 0.9;
   font-weight: 400;
   border-bottom: 3px solid #99E2D0;
@@ -787,8 +731,9 @@ body {
   justify-content: space-between;
   background-color: #fff;
   border-radius: 15px;
-  margin-left: 2em;
-  margin-right: 2em;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   height: 60px;
   color: black;
   margin-top: 0.8em;

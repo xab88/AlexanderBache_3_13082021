@@ -25,7 +25,10 @@
     .menu__title{                
         display: flex;  
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+
         font-family: $shrikhand;       
         h2{
             font-size: 28px;            
@@ -43,7 +46,7 @@
     
     h3{
         margin-top: 0;
-        margin-left: 0.8em;
+        margin-left: 1.5em;
         opacity: 0.9;
         font-weight: 400;
         border-bottom: 3px solid $tertiary_green;
@@ -70,8 +73,9 @@
         justify-content: space-between;
         background-color: #fff;
         border-radius: 15px;
-        margin-left: 2em;
-        margin-right: 2em;    
+        width: 95%; 
+        margin-left: auto;
+        margin-right: auto;   
         height: 60px;
         color: black;
         margin-top: .8em;
