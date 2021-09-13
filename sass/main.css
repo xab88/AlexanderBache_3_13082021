@@ -609,6 +609,8 @@ nav i {
 .btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-box-shadow: 8px 4px 8px #c4c4c4;
+          box-shadow: 8px 4px 8px #c4c4c4;
 }
 
 .btn__menu {

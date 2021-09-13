@@ -2,6 +2,7 @@
 
 @import "../utils/breakpoints",
         "../utils/mixins";
+
 body{
     font-family: roboto, sans-serif;
     min-width: 375px;
@@ -9,9 +10,7 @@ body{
     margin: auto;
     color: black;
     @include tablet-only; 
-    @include large-tablet-only; 
-    
-    
+    @include large-tablet-only;    
 }
 
 

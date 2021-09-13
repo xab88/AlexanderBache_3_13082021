@@ -397,6 +397,7 @@ nav i {
 }
 .btn:hover {
   transform: scale(1.2);
+  box-shadow: 8px 4px 8px #c4c4c4;
 }
 
 .btn__menu {
