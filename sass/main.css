@@ -839,7 +839,7 @@ nav i {
 
 .restaurant .restaurant_list figure {
   position: relative;
-  margin: 0 0;
+  margin: auto;
   border-radius: 20px;
   -webkit-box-shadow: 2px 2px 7px #dfdfdf;
           box-shadow: 2px 2px 7px #dfdfdf;
